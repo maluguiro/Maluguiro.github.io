@@ -1,8 +1,55 @@
 
-(versión que viene de GitHub)
->>>>>>> origin/main
+
 
 /* ====== Theme ====== */
+
+:root{
+  --ink: #1b1b1b;
+  --muted: #6b6b6b;
+
+  /* papel */
+  --paper: #f4f0e8;
+  --paper-2: #efe9de;
+  --border: #e1d8cb;
+
+  /* paleta gingham */
+  --pink: #e43a8b;
+  --magenta: #c92f93;
+  --orange: #ef7a34;
+  --peach: #f3b37d;
+  --lime: #b8d466;
+}
+
+*{ box-sizing: border-box; }
+
+html{ scroll-behavior: smooth; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: #faf8f4; /* base clara (header encima) */
+  line-height: 1.55;
+}
+
+
+:root{
+  --ink: #1b1b1b;
+  --muted: #6b6b6b;
+
+  /* body inferior */
+  --page-gray: #e9e6e1;      /* gris cálido */
+  --card-white: #ffffff;
+
+  /* rosa pastel */
+  --pink-soft: #d98aa7;
+  --pink-soft-2: #c97897;
+
+  --border-soft: #ece7df;
+}
+
+/* ====== Theme ====== */
+
 :root{
   --ink: #1b1b1b;
   --muted: #6b6b6b;
@@ -32,54 +79,16 @@ body{
   line-height: 1.55;
 }
 
+
 /* ====== Layout ====== */
-=======
-/* ====== Base / Theme ====== */
-=======
-/* ====== Theme ====== */
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
-:root{
-  --ink: #1b1b1b;
-  --muted: #6b6b6b;
 
-  /* papel */
-  --paper: #f4f0e8;
-  --paper-2: #efe9de;
-  --border: #e1d8cb;
-
-  /* paleta gingham */
-  --pink: #e43a8b;
-  --magenta: #c92f93;
-  --orange: #ef7a34;
-  --peach: #f3b37d;
-  --lime: #b8d466;
-}
-
-*{ box-sizing: border-box; }
-
-html{ scroll-behavior: smooth; }
-
-body{
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--ink);
-  background: linear-gradient(180deg, #faf8f4, var(--paper));
-  line-height: 1.55;
-}
-
-<<<<<<< HEAD
->>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
-=======
-/* ====== Layout ====== */
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
 .container{
   max-width: 980px;
   margin: 0 auto;
   padding: 22px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 /* ====== Header "gingham" ====== */
 .site-header{
   position: relative;
@@ -184,6 +193,67 @@ body{
   border-bottom-color: rgba(255,255,255,0.75);
 }
 
+/* ====== Zona inferior estilo tarjeta (como tu referencia) ====== */
+.paper-wrap{
+  background: var(--page-gray);
+  padding: 26px 0 46px;
+}
+
+/* tarjeta blanca grande */
+.paper-card{
+  background: var(--card-white);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+}
+
+/* Tipografías y colores “rosa pastel” */
+.paper-card h2,
+.paper-card h3{
+  color: var(--pink-soft-2);
+}
+
+.paper-card p,
+.paper-card li{
+  color: #6a6460;
+}
+
+.paper-card a{
+  color: var(--pink-soft-2);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201,120,151,0.35);
+}
+
+.paper-card a:hover{
+  border-bottom-color: rgba(201,120,151,0.80);
+}
+
+/* tarjetas internas (tus .card) dentro de la tarjeta blanca */
+.paper-card .card{
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+}
+
+/* tags más suaves */
+.paper-card .tags li{
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  color: var(--pink-soft);
+}
+
+/* footer inferior */
+.paper-footer{
+  text-align: center;
+  margin-top: 16px;
+  color: rgba(201,120,151,0.85);
+  font-weight: 600;
+}
+
 /* ====== Main "papel" ====== */
 main.container{
   padding-top: 14px;
@@ -228,8 +298,7 @@ h3{
   list-style: none;
   padding: 0;
   margin: 12px 0 0;
-=======
-a{
+
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -241,10 +310,9 @@ a:hover{
   opacity: 0.95;
 }
 
-/* ====== Header ====== */
-=======
+
 /* ====== Header "gingham" ====== */
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
+
 .site-header{
   position: relative;
   padding: 34px 0 26px;
@@ -331,17 +399,14 @@ a:hover{
   max-width: 62ch;
 }
 
-<<<<<<< HEAD
-.links{
->>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
-=======
+
 /* links del header */
 .brand-links{
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
+
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-<<<<<<< HEAD
+
   gap: 10px;
 }
 
@@ -369,23 +434,7 @@ footer.container{
   padding-bottom: 40px;
 }
 
-/* ====== Burbuja mail (sobre gingham) ====== */
-.chat-bubble{
-  position: fixed;
-  top: 14px;
-  left: 14px;
-=======
-  margin-top: 14px;
-}
 
-.brand-links a{
-  color: rgba(255,255,255,0.92);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.35);
-}
-.brand-links a:hover{
-  border-bottom-color: rgba(255,255,255,0.75);
-}
 
 /* ====== Main "papel" ====== */
 main.container{
@@ -463,53 +512,24 @@ footer.container{
 /* ====== Burbuja mail (sobre gingham) ====== */
 .chat-bubble{
   position: fixed;
-<<<<<<< HEAD
-  top: 16px;
-  left: 16px;
->>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
-=======
   top: 14px;
   left: 14px;
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
   z-index: 9999;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   width: 78px;
   height: 46px;
 
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.55);
-  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.60);
+  background: rgba(255,255,255,0.20);
   backdrop-filter: blur(10px);
 
   box-shadow: 0 16px 40px rgba(0,0,0,0.22);
-  font-weight: 700;
-=======
-  width: 72px;
-  height: 44px;
-=======
-  width: 78px;
-  height: 46px;
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
-
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.55);
-  background: rgba(255,255,255,0.18);
-  backdrop-filter: blur(10px);
-
-<<<<<<< HEAD
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-  font-weight: 600;
->>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
-=======
-  box-shadow: 0 16px 40px rgba(0,0,0,0.22);
-  font-weight: 700;
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
+  font-weight: 800;
   color: rgba(255,255,255,0.92);
 
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
@@ -517,22 +537,15 @@ footer.container{
 
 .chat-bubble:hover{
   transform: translateY(-1px);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
-  background: rgba(255,255,255,0.24);
-  border-color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.28);
+  border-color: rgba(255,255,255,0.85);
 }
+
 
 /* responsive */
 @media (max-width: 720px){
   .brand{ width: 100%; }
-<<<<<<< HEAD
-=======
-  background: rgba(255,255,255,0.14);
+background: rgba(255,255,255,0.14);
   border-color: rgba(255,255,255,0.28);
->>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
-=======
->>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
+
 }
