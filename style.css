@@ -2,7 +2,7 @@
   --ink: #1b1b1b;
   --muted: #6b6b6b;
 
-  /* fondo inferior */
+  /* body inferior */
   --page-gray: #e9e6e1;
   --card-white: #ffffff;
 
@@ -36,7 +36,7 @@ body{
   padding: 22px;
 }
 
-/* ===== HEADER GINGHAM ===== */
+/* ===== HEADER GINGHAM (colores) ===== */
 .site-header{
   position: relative;
   padding: 34px 0 26px;
@@ -50,6 +50,7 @@ body{
   background:
     radial-gradient(1200px 420px at 20% 30%, rgba(255,255,255,0.20), transparent 60%),
     radial-gradient(900px 360px at 80% 40%, rgba(255,255,255,0.14), transparent 60%),
+
     linear-gradient(90deg,
       rgba(228,58,139,0.85) 0 25%,
       rgba(239,122,52,0.85) 25% 50%,
@@ -61,27 +62,30 @@ body{
       rgba(239,122,52,0.65) 33% 66%,
       rgba(201,47,147,0.75) 66% 100%
     );
+
   background-size: 100% 100%, 100% 100%, 240px 240px, 240px 240px;
   background-blend-mode: screen, screen, multiply, multiply;
   filter: saturate(1.06) contrast(1.02);
 }
 
+/* ===== HEADER TEXTURA TEXTIL (noise + trama) =====
+   Nota: si tu navegador cachea, probá Ctrl+F5 después del push.
+*/
 .site-header::after{
   content:"";
   position:absolute;
   inset: 0;
   pointer-events: none;
 
-  /* 1) noise (fibra)  2) weave (hilo)  3) micro-rayas (tejido) */
   background:
-    /* Noise con SVG turbulence (muy efectivo) */
+    /* noise orgánico (fibra) */
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.40'/%3E%3C/svg%3E"),
-    /* weave diagonal suave */
+    /* hilos diagonales */
     repeating-linear-gradient(45deg,
       rgba(255,255,255,0.06) 0 2px,
       rgba(0,0,0,0) 2px 7px
     ),
-    /* micro-rayas horizontales (tejido) */
+    /* micro-hilos horizontales */
     repeating-linear-gradient(0deg,
       rgba(255,255,255,0.05) 0 1px,
       rgba(0,0,0,0) 1px 6px
@@ -89,10 +93,7 @@ body{
 
   background-size: 220px 220px, 12px 12px, 7px 7px;
   mix-blend-mode: multiply;
-  opacity: 0.35;
-}
-.site-header{
-  filter: saturate(1.05) contrast(1.02);
+  opacity: 0.38;
 }
 
 .header-inner{ position: relative; z-index: 1; }
@@ -150,6 +151,7 @@ body{
 }
 
 section{ margin-top: 20px; }
+.about p{ max-width: 75ch; }
 
 h2{
   margin: 0 0 10px;
@@ -295,4 +297,3 @@ h3{
 @media (max-width: 720px){
   .brand{ width: 100%; }
 }
-.site-header { outline: 6px solid lime !important; }
