@@ -23,45 +23,51 @@
     </div>
   </header>
 
-  <section class="about">
-  <h2>Sobre mí</h2>
-  <p class="muted">
-    Soy estudiante de Desarrollo de Software con foco en aplicaciones web. Me interesa construir productos
-    educativos y experiencias claras para el usuario. Trabajo con React y Node, y aplico Git/GitHub para
-    versionado y colaboración.
-  </p>
-</section>
-
-<section class="highlights">
-  <h2>Highlights</h2>
-
-  <div class="grid-3">
-    <article class="mini-card">
-      <h3>Frontend</h3>
-      <p class="muted">UI prolija, responsive, componentes reutilizables y buenas prácticas de estructura.</p>
-    </article>
-
-    <article class="mini-card">
-      <h3>Backend / APIs</h3>
-      <p class="muted">Endpoints, validaciones y lógica de negocio con Node/Express (en proyectos).</p>
-    </article>
-
-    <article class="mini-card">
-      <h3>Git & colaboración</h3>
-      <p class="muted">Ramas, PRs, merge y un historial de commits claro para trabajo en equipo.</p>
-    </article>
-  </div>
-</section>
-
   <!-- BODY GRIS + TARJETA BLANCA -->
   <div class="paper-wrap">
     <main class="container paper-card">
-      <section>
+
+      <section class="about">
+        <h2>Sobre mí</h2>
+        <p class="muted">
+          Soy estudiante de Desarrollo de Software con foco en aplicaciones web. Me interesa construir productos
+          educativos y experiencias claras para el usuario. Trabajo con React y Node, y aplico Git/GitHub para
+          versionado y colaboración.
+        </p>
+      </section>
+
+      <section class="highlights">
+        <h2>Highlights</h2>
+
+        <div class="grid-3">
+          <article class="mini-card">
+            <h3>Frontend</h3>
+            <p class="muted">UI prolija, responsive, componentes reutilizables y buenas prácticas de estructura.</p>
+          </article>
+
+          <article class="mini-card">
+            <h3>Backend / APIs</h3>
+            <p class="muted">Endpoints, validaciones y lógica de negocio con Node/Express (en proyectos).</p>
+          </article>
+
+          <article class="mini-card">
+            <h3>Git & colaboración</h3>
+            <p class="muted">Ramas, PRs, merge y un historial de commits claro para trabajo en equipo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="proyectos">
         <h2>Proyectos</h2>
 
         <article class="card">
           <h3>Mini Proyecto Web (Git/GitHub)</h3>
-          <p>Proyecto simple en HTML/CSS versionado con ramas, PR y merge.</p>
+          <p class="muted">HTML/CSS versionado con ramas, Pull Request y merge a main.</p>
+
+          <ul class="stack">
+            <li>HTML</li><li>CSS</li><li>Git</li><li>GitHub</li>
+          </ul>
+
           <div class="links">
             <a href="https://github.com/maluguiro/mini_proyectoWeb" target="_blank" rel="noreferrer">Repo</a>
           </div>
@@ -69,24 +75,15 @@
 
         <article class="card">
           <h3>Examen Proctor (en progreso)</h3>
-          <p>Plataforma de exámenes con enfoque antifraude (intentos, timer, trazabilidad).</p>
+          <p class="muted">Plataforma de exámenes con enfoque antifraude: intentos, timer, trazabilidad.</p>
+
+          <ul class="stack">
+            <li>React</li><li>Node</li><li>SQL (básico)</li>
+          </ul>
+
           <p class="muted">Demo/Repo: próximamente</p>
         </article>
       </section>
-
-      <section>
-  <h2>Cursos</h2>
-
-  <article class="card">
-    <h3>Git & GitHub</h3>
-    <p class="muted">Flujo de versionado, ramas, Pull Requests y trabajo colaborativo.</p>
-  </article>
-
-  <article class="card">
-    <h3>Prompting / IA aplicada al desarrollo</h3>
-    <p class="muted">Uso de IA para planificación, generación guiada, debugging y documentación (buenas prácticas).</p>
-  </article>
-</section>
 
       <section>
         <h2>Skills</h2>
@@ -96,10 +93,25 @@
         </ul>
       </section>
 
+      <section>
+        <h2>Cursos</h2>
+
+        <article class="card compact">
+          <h3>Git & GitHub</h3>
+          <p class="muted">Flujo de versionado, ramas, Pull Requests y trabajo colaborativo.</p>
+        </article>
+
+        <article class="card compact">
+          <h3>IA aplicada al desarrollo (Prompting)</h3>
+          <p class="muted">Uso de IA para planificación, generación guiada, debugging y documentación.</p>
+        </article>
+      </section>
+
       <section id="contacto">
         <h2>Contacto</h2>
         <p class="muted">Podés escribirme por LinkedIn o ver mis repositorios en GitHub.</p>
       </section>
+
     </main>
 
     <footer class="container paper-footer">
@@ -110,7 +122,7 @@
   <!-- BURBUJA MAIL (cambiá el mail) -->
   <a
     class="chat-bubble"
-    href="mailto:mguiro21@gmail.com?subject=Contacto%20desde%20tu%20portfolio&body=Hola%20Malena%2C%0D%0AVi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte.%0D%0A%0D%0AGracias!"
+    href="mailto:TUEMAIL@DOMINIO.COM?subject=Contacto%20desde%20tu%20portfolio&body=Hola%20Malena%2C%0D%0AVi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte.%0D%0A%0D%0AGracias!"
     aria-label="Enviar email a Malena"
     title="Hola! Enviame un email"
   >
