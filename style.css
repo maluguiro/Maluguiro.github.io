@@ -295,3 +295,4 @@ h3{
 @media (max-width: 720px){
   .brand{ width: 100%; }
 }
+.site-header { outline: 6px solid lime !important; }
