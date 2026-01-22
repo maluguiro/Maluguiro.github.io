@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+
+(versión que viene de GitHub)
+>>>>>>> origin/main
+
 /* ====== Theme ====== */
 :root{
   --ink: #1b1b1b;
@@ -32,42 +35,50 @@ body{
 /* ====== Layout ====== */
 =======
 /* ====== Base / Theme ====== */
+=======
+/* ====== Theme ====== */
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
 :root{
-  --bg: #0b1220;
-  --surface: rgba(255,255,255,0.06);
-  --surface-2: rgba(255,255,255,0.10);
-  --border: rgba(255,255,255,0.12);
-  --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.70);
+  --ink: #1b1b1b;
+  --muted: #6b6b6b;
 
-  --accent: #7c3aed;     /* violeta sobrio */
-  --accent-2: #22c55e;   /* verde suave (detalles) */
+  /* papel */
+  --paper: #f4f0e8;
+  --paper-2: #efe9de;
+  --border: #e1d8cb;
 
-  --shadow: 0 14px 40px rgba(0,0,0,0.35);
-  --radius: 16px;
+  /* paleta gingham */
+  --pink: #e43a8b;
+  --magenta: #c92f93;
+  --orange: #ef7a34;
+  --peach: #f3b37d;
+  --lime: #b8d466;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+*{ box-sizing: border-box; }
+
+html{ scroll-behavior: smooth; }
 
 body{
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(1200px 600px at 20% 0%, rgba(124,58,237,0.28), transparent 60%),
-    radial-gradient(900px 500px at 90% 20%, rgba(34,197,94,0.18), transparent 60%),
-    linear-gradient(180deg, var(--bg), #070a12);
+  color: var(--ink);
+  background: linear-gradient(180deg, #faf8f4, var(--paper));
   line-height: 1.55;
 }
 
+<<<<<<< HEAD
 >>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
+=======
+/* ====== Layout ====== */
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
 .container{
   max-width: 980px;
   margin: 0 auto;
   padding: 22px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* ====== Header "gingham" ====== */
 .site-header{
@@ -231,40 +242,102 @@ a:hover{
 }
 
 /* ====== Header ====== */
+=======
+/* ====== Header "gingham" ====== */
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
 .site-header{
-  padding: 34px 0 10px;
+  position: relative;
+  padding: 34px 0 26px;
+  overflow: hidden;
 }
 
+/* patrón tipo “cuadros” con varias capas */
+.site-header::before{
+  content:"";
+  position:absolute;
+  inset: 0;
+  background:
+    /* capa suave (tipo acuarela) */
+    radial-gradient(1200px 420px at 20% 30%, rgba(255,255,255,0.20), transparent 60%),
+    radial-gradient(900px 360px at 80% 40%, rgba(255,255,255,0.14), transparent 60%),
+
+    /* gingham: cuadrados grandes */
+    linear-gradient(90deg,
+      rgba(228,58,139,0.85) 0 25%,
+      rgba(239,122,52,0.85) 25% 50%,
+      rgba(184,212,102,0.65) 50% 75%,
+      rgba(201,47,147,0.85) 75% 100%
+    ),
+    linear-gradient(0deg,
+      rgba(228,58,139,0.70) 0 33%,
+      rgba(239,122,52,0.65) 33% 66%,
+      rgba(201,47,147,0.75) 66% 100%
+    );
+
+  /* “cuadrícula” tipo tela */
+  background-size:
+    100% 100%,
+    100% 100%,
+    240px 240px,
+    240px 240px;
+
+  background-blend-mode: screen, screen, multiply, multiply;
+  filter: saturate(1.06) contrast(1.02);
+}
+
+/* grano/texture sin imagen (sutil) */
+.site-header::after{
+  content:"";
+  position:absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.06) 0 2px, rgba(0,0,0,0.00) 2px 6px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 2px, rgba(0,0,0,0.00) 2px 7px);
+  opacity: 0.20;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Contenido del header por encima del fondo */
 .header-inner{
-  display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
-  gap: 18px;
-  align-items: start;
+  position: relative;
+  z-index: 1;
 }
 
-.eyebrow{
+/* Tarjeta “sobre” el gingham */
+.brand{
   display: inline-block;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 0 0 10px;
+  padding: 18px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.20);
 }
 
-h1{
+/* Tipografía del nombre (más “logo”) */
+.brand-title{
   margin: 0;
-  font-size: clamp(30px, 5vw, 44px);
+  font-size: clamp(30px, 5vw, 46px);
   letter-spacing: -0.02em;
+  color: rgba(255,255,255,0.92);
+  text-shadow: 0 10px 28px rgba(0,0,0,0.30);
 }
 
-.subtitle{
+/* subtítulo */
+.brand-subtitle{
   margin: 10px 0 0;
-  color: var(--muted);
-  max-width: 58ch;
+  color: rgba(255,255,255,0.86);
+  max-width: 62ch;
 }
 
+<<<<<<< HEAD
 .links{
 >>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
+=======
+/* links del header */
+.brand-links{
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
@@ -303,50 +376,29 @@ footer.container{
   left: 14px;
 =======
   margin-top: 14px;
-  color: var(--muted);
 }
 
-.actions{
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 16px;
+.brand-links a{
+  color: rgba(255,255,255,0.92);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.35);
+}
+.brand-links a:hover{
+  border-bottom-color: rgba(255,255,255,0.75);
 }
 
-.badge{
-  background: linear-gradient(180deg, var(--surface), rgba(255,255,255,0.03));
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 14px;
-  box-shadow: var(--shadow);
+/* ====== Main "papel" ====== */
+main.container{
+  padding-top: 14px;
 }
 
-.badge-title{
-  margin: 0;
-  font-weight: 600;
+section{
+  margin-top: 22px;
 }
 
-.badge-text{
-  margin: 8px 0 0;
-  color: var(--muted);
-}
-
-/* ====== Sections ====== */
-.section{
-  margin-top: 26px;
-  padding-top: 10px;
-}
-
-.section-head{
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
+/* títulos */
 h2{
-  margin: 0;
+  margin: 0 0 10px;
   font-size: 22px;
   letter-spacing: -0.01em;
 }
@@ -356,133 +408,76 @@ h3{
   letter-spacing: -0.01em;
 }
 
-.muted{ color: var(--muted); }
-
-/* ====== Grid / Cards ====== */
-.grid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 14px;
-  margin-top: 14px;
-}
-
+/* tarjetas tipo papel */
 .card{
-  background: linear-gradient(180deg, var(--surface), rgba(255,255,255,0.03));
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.35)),
+    radial-gradient(900px 180px at 10% 10%, rgba(255,255,255,0.55), transparent 60%),
+    var(--paper-2);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 16px;
   padding: 16px;
-  box-shadow: var(--shadow);
-  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-}
-
-.card:hover{
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.22);
-  background: linear-gradient(180deg, var(--surface-2), rgba(255,255,255,0.04));
-}
-
-.card-actions{
   margin-top: 12px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
 }
 
-.contact-card{
-  margin-top: 14px;
+/* texto suave */
+.muted{
+  color: var(--muted);
 }
 
-/* ====== Buttons / Pills ====== */
-.btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.03);
-  color: var(--text);
-  cursor: pointer;
-  user-select: none;
-  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
-}
-
-.btn:hover{
-  transform: translateY(-1px);
-  background: rgba(255,255,255,0.06);
-  border-color: rgba(255,255,255,0.22);
-  border-bottom-color: rgba(255,255,255,0.22);
-}
-
-.btn.primary{
-  background: linear-gradient(180deg, rgba(124,58,237,0.95), rgba(124,58,237,0.75));
-  border-color: rgba(124,58,237,0.55);
-}
-
-.btn.primary:hover{
-  background: linear-gradient(180deg, rgba(124,58,237,1), rgba(124,58,237,0.78));
-  border-bottom-color: rgba(124,58,237,0.60);
-}
-
-.btn.small{
-  padding: 8px 10px;
-  border-radius: 10px;
-  font-size: 14px;
-}
-
-.pill{
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(34,197,94,0.35);
-  background: rgba(34,197,94,0.12);
-  color: rgba(255,255,255,0.88);
-  font-size: 13px;
-}
-
-/* ====== Tags ====== */
+/* lista tags */
 .tags{
   list-style: none;
   padding: 0;
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .tags li{
+  background: #fff;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.03);
   padding: 8px 12px;
   border-radius: 999px;
-  color: rgba(255,255,255,0.88);
+  color: #2a2a2a;
 }
 
-/* ====== Footer ====== */
-.footer{
-  padding-top: 26px;
+/* links generales */
+a{
+  color: #2a2a2a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.18);
+}
+a:hover{
+  border-bottom-color: rgba(0,0,0,0.55);
+}
+
+/* footer */
+footer.container{
+  margin-top: 24px;
   padding-bottom: 40px;
 }
 
-/* ====== Responsive ====== */
-@media (max-width: 820px){
-  .header-inner{ grid-template-columns: 1fr; }
-  .grid{ grid-template-columns: 1fr; }
-}
+/* ====== Burbuja mail (sobre gingham) ====== */
 .chat-bubble{
   position: fixed;
+<<<<<<< HEAD
   top: 16px;
   left: 16px;
 >>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
+=======
+  top: 14px;
+  left: 14px;
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
   z-index: 9999;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   width: 78px;
   height: 46px;
@@ -497,15 +492,24 @@ h3{
 =======
   width: 72px;
   height: 44px;
+=======
+  width: 78px;
+  height: 46px;
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
 
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.10);
-  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
 
+<<<<<<< HEAD
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
   font-weight: 600;
 >>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
+=======
+  box-shadow: 0 16px 40px rgba(0,0,0,0.22);
+  font-weight: 700;
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
   color: rgba(255,255,255,0.92);
 
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
@@ -514,6 +518,9 @@ h3{
 .chat-bubble:hover{
   transform: translateY(-1px);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
   background: rgba(255,255,255,0.24);
   border-color: rgba(255,255,255,0.75);
 }
@@ -521,8 +528,11 @@ h3{
 /* responsive */
 @media (max-width: 720px){
   .brand{ width: 100%; }
+<<<<<<< HEAD
 =======
   background: rgba(255,255,255,0.14);
   border-color: rgba(255,255,255,0.28);
 >>>>>>> f0b03079454ad241eabc3b59ad04449a0d3a0e91
+=======
+>>>>>>> cd6fe38579de43aefe4ad69b1ed9787f4c0d6e0d
 }
