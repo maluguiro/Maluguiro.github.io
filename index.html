@@ -16,8 +16,9 @@
         <p class="brand-subtitle">Desarrolladora Web Junior · React / Node · Proyectos educativos</p>
 
         <div class="brand-links">
-          <a href="https://github.com/maluguiro" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/malena-guirotane" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://www.linkedin.com/in/malena-guirotane" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="mailto:mguiro21@gmail.com?subject=Contacto%20desde%20tu%20portfolio&body=Hola%20Malena%2C%0D%0AVi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte.%0D%0A%0D%0AGracias!">Email</a>
+          <a class="btn" href="#proyectos">Proyectos</a>
         </div>
       </div>
     </div>
@@ -69,19 +70,64 @@
           </ul>
 
           <div class="links">
-            <a href="https://github.com/maluguiro/mini_proyectoWeb" target="_blank" rel="noreferrer">Repo</a>
+            <span class="pill">Codigo privado / disponible a pedido</span>
           </div>
         </article>
 
         <article class="card">
-          <h3>Examen Proctor (en progreso)</h3>
-          <p class="muted">Plataforma de exámenes con enfoque antifraude: intentos, timer, trazabilidad.</p>
+          <h3>ProctorEtic - Plataforma de examenes antifraude</h3>
+          <p class="muted">
+            Plataforma de evaluaciones con enfoque antifraude y trazabilidad: control de intentos, eventos
+            cronometrados y seguimiento completo del flujo de examen para docentes y alumnos.
+          </p>
 
-          <ul class="stack">
-            <li>React</li><li>Node</li><li>SQL (básico)</li>
+          <ul class="features">
+            <li>Intentos y trazabilidad de eventos antifraude</li>
+            <li>Timer y flujo de examen guiado</li>
+            <li>Panel docente con correccion y resultados</li>
+            <li>Monitoreo/alertas (opcional)</li>
           </ul>
 
-          <p class="muted">Demo/Repo: próximamente</p>
+          <ul class="stack">
+            <li>React/Next</li><li>Node/Express</li><li>Prisma</li><li>MySQL</li><li>Render/Vercel</li>
+          </ul>
+
+          <div class="links">
+            <a class="btn" href="#" aria-disabled="true">Demo (proximamente)</a>
+            <a class="btn" href="#contacto">Contacto</a>
+          </div>
+
+          <div class="gallery">
+            <a class="thumb" href="#pe-img-1">
+              <img src="assets/proctoetic/01-dashboard.jpg" alt="Panel general de ProctorEtic" loading="lazy" />
+            </a>
+            <a class="thumb" href="#pe-img-2">
+              <img src="assets/proctoetic/02-examen.jpg" alt="Vista del examen con timer" loading="lazy" />
+            </a>
+            <a class="thumb" href="#pe-img-3">
+              <img src="assets/proctoetic/03-antifraude.jpg" alt="Registro de eventos antifraude" loading="lazy" />
+            </a>
+            <a class="thumb" href="#pe-img-4">
+              <img src="assets/proctoetic/04-resultados.jpg" alt="Resultados y correccion" loading="lazy" />
+            </a>
+          </div>
+
+          <div id="pe-img-1" class="lightbox">
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">Cerrar</a>
+            <img src="assets/proctoetic/01-dashboard.jpg" alt="Panel general de ProctorEtic" loading="lazy" />
+          </div>
+          <div id="pe-img-2" class="lightbox">
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">Cerrar</a>
+            <img src="assets/proctoetic/02-examen.jpg" alt="Vista del examen con timer" loading="lazy" />
+          </div>
+          <div id="pe-img-3" class="lightbox">
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">Cerrar</a>
+            <img src="assets/proctoetic/03-antifraude.jpg" alt="Registro de eventos antifraude" loading="lazy" />
+          </div>
+          <div id="pe-img-4" class="lightbox">
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">Cerrar</a>
+            <img src="assets/proctoetic/04-resultados.jpg" alt="Resultados y correccion" loading="lazy" />
+          </div>
         </article>
       </section>
 
@@ -109,7 +155,7 @@
 
       <section id="contacto">
         <h2>Contacto</h2>
-        <p class="muted">Podés escribirme por LinkedIn o ver mis repositorios en GitHub.</p>
+        <p class="muted">Podes escribirme por LinkedIn o por email.</p>
       </section>
 
     </main>
@@ -130,3 +176,7 @@
   </a>
 </body>
 </html>
+
+
+
+
