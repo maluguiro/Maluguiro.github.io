@@ -62,71 +62,180 @@
         <h2>Proyectos</h2>
 
         <article class="card">
-          <h3>Mini Proyecto Web (Git/GitHub)</h3>
-          <p class="muted">HTML/CSS versionado con ramas, Pull Request y merge a main.</p>
-
-          <ul class="stack">
-            <li>HTML</li><li>CSS</li><li>Git</li><li>GitHub</li>
-          </ul>
-
-          <div class="links">
-            <span class="pill">Codigo privado / disponible a pedido</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>ProctorEtic - Plataforma de examenes antifraude</h3>
+          <h3>ProctorEtic — Plataforma de examenes con monitoreo antifraude</h3>
           <p class="muted">
-            Plataforma de evaluaciones con enfoque antifraude y trazabilidad: control de intentos, eventos
-            cronometrados y seguimiento completo del flujo de examen para docentes y alumnos.
+            Aplicacion web end-to-end para crear, rendir y supervisar examenes online, con trazabilidad de eventos y
+            herramientas de correccion docente.
           </p>
 
           <ul class="features">
-            <li>Intentos y trazabilidad de eventos antifraude</li>
-            <li>Timer y flujo de examen guiado</li>
-            <li>Panel docente con correccion y resultados</li>
-            <li>Monitoreo/alertas (opcional)</li>
+            <li>Creacion y configuracion de evaluaciones (roles docente/alumno)</li>
+            <li>Banco de preguntas y armado de examen</li>
+            <li>Tablero de control en vivo + chat</li>
+            <li>Registro de eventos antifraude y seguimiento por intento</li>
+            <li>Correccion manual y reportes</li>
           </ul>
 
           <ul class="stack">
-            <li>React/Next</li><li>Node/Express</li><li>Prisma</li><li>MySQL</li><li>Render/Vercel</li>
+            <li>React/Next</li><li>Node/Express</li><li>Prisma</li><li>SQL</li><li>Deploy (Render/Vercel)</li>
           </ul>
 
           <div class="links">
-            <a class="btn" href="#" aria-disabled="true">Demo (proximamente)</a>
-            <a class="btn" href="#contacto">Contacto</a>
+            <a class="btn" href="#pe-1">Ver flujo</a>
+            <a class="btn" href="#contacto">Contactar</a>
           </div>
 
           <div class="gallery">
-            <a class="thumb" href="#pe-img-1">
-              <img src="assets/proctoetic/01-dashboard.jpg" alt="Panel general de ProctorEtic" loading="lazy" />
-            </a>
-            <a class="thumb" href="#pe-img-2">
-              <img src="assets/proctoetic/02-examen.jpg" alt="Vista del examen con timer" loading="lazy" />
-            </a>
-            <a class="thumb" href="#pe-img-3">
-              <img src="assets/proctoetic/03-antifraude.jpg" alt="Registro de eventos antifraude" loading="lazy" />
-            </a>
-            <a class="thumb" href="#pe-img-4">
-              <img src="assets/proctoetic/04-resultados.jpg" alt="Resultados y correccion" loading="lazy" />
-            </a>
+            <a class="thumb" href="#pe-1"><img src="assets/proctoetic/01-login.png" alt="Login" loading="lazy"></a>
+            <a class="thumb" href="#pe-2"><img src="assets/proctoetic/02-dashboard.png" alt="Dashboard" loading="lazy"></a>
+            <a class="thumb" href="#pe-3"><img src="assets/proctoetic/03-universidades.png" alt="Universidades" loading="lazy"></a>
+            <a class="thumb" href="#pe-4"><img src="assets/proctoetic/04-configuracion-docente.png" alt="Configuracion docente" loading="lazy"></a>
+            <a class="thumb" href="#pe-5"><img src="assets/proctoetic/05-configuracion-basica.png" alt="Configuracion basica" loading="lazy"></a>
+            <a class="thumb" href="#pe-6"><img src="assets/proctoetic/06-preguntas.png" alt="Preguntas" loading="lazy"></a>
+            <a class="thumb" href="#pe-7"><img src="assets/proctoetic/07-tablero-control.png" alt="Tablero de control" loading="lazy"></a>
+            <a class="thumb" href="#pe-8"><img src="assets/proctoetic/08-tablero-chat.png" alt="Chat en tablero" loading="lazy"></a>
+            <a class="thumb" href="#pe-9"><img src="assets/proctoetic/09-correccion-detalle.png" alt="Correccion detalle" loading="lazy"></a>
+            <a class="thumb" href="#pe-10"><img src="assets/proctoetic/10-correcciones-bandeja.png" alt="Correcciones bandeja" loading="lazy"></a>
           </div>
 
-          <div id="pe-img-1" class="lightbox">
-            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">Cerrar</a>
-            <img src="assets/proctoetic/01-dashboard.jpg" alt="Panel general de ProctorEtic" loading="lazy" />
+          <div id="pe-1" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-10" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-2" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/01-login.png" alt="Login" />
+              <figcaption>
+                <span class="lightbox__caption">Login</span>
+                <span class="lightbox__count">1/10</span>
+              </figcaption>
+            </figure>
           </div>
-          <div id="pe-img-2" class="lightbox">
-            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">Cerrar</a>
-            <img src="assets/proctoetic/02-examen.jpg" alt="Vista del examen con timer" loading="lazy" />
+
+          <div id="pe-2" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-1" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-3" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/02-dashboard.png" alt="Dashboard" />
+              <figcaption>
+                <span class="lightbox__caption">Dashboard</span>
+                <span class="lightbox__count">2/10</span>
+              </figcaption>
+            </figure>
           </div>
-          <div id="pe-img-3" class="lightbox">
-            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">Cerrar</a>
-            <img src="assets/proctoetic/03-antifraude.jpg" alt="Registro de eventos antifraude" loading="lazy" />
+
+          <div id="pe-3" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-2" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-4" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/03-universidades.png" alt="Universidades" />
+              <figcaption>
+                <span class="lightbox__caption">Universidades</span>
+                <span class="lightbox__count">3/10</span>
+              </figcaption>
+            </figure>
           </div>
-          <div id="pe-img-4" class="lightbox">
-            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">Cerrar</a>
-            <img src="assets/proctoetic/04-resultados.jpg" alt="Resultados y correccion" loading="lazy" />
+
+          <div id="pe-4" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-3" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-5" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/04-configuracion-docente.png" alt="Configuracion docente" />
+              <figcaption>
+                <span class="lightbox__caption">Configuracion docente</span>
+                <span class="lightbox__count">4/10</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div id="pe-5" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-4" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-6" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/05-configuracion-basica.png" alt="Configuracion basica" />
+              <figcaption>
+                <span class="lightbox__caption">Configuracion basica</span>
+                <span class="lightbox__count">5/10</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div id="pe-6" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-5" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-7" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/06-preguntas.png" alt="Preguntas" />
+              <figcaption>
+                <span class="lightbox__caption">Preguntas</span>
+                <span class="lightbox__count">6/10</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div id="pe-7" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-6" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-8" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/07-tablero-control.png" alt="Tablero de control" />
+              <figcaption>
+                <span class="lightbox__caption">Tablero de control</span>
+                <span class="lightbox__count">7/10</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div id="pe-8" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-7" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-9" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/08-tablero-chat.png" alt="Chat en tablero" />
+              <figcaption>
+                <span class="lightbox__caption">Chat en tablero</span>
+                <span class="lightbox__count">8/10</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div id="pe-9" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-8" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-10" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/09-correccion-detalle.png" alt="Correccion detalle" />
+              <figcaption>
+                <span class="lightbox__caption">Correccion detalle</span>
+                <span class="lightbox__count">9/10</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div id="pe-10" class="lightbox" aria-label="Imagen ampliada">
+            <a class="lightbox__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+            <a class="lightbox__nav lightbox__nav--prev" href="#pe-9" aria-label="Anterior">‹</a>
+            <a class="lightbox__nav lightbox__nav--next" href="#pe-1" aria-label="Siguiente">›</a>
+            <a class="lightbox__close" href="#proyectos" aria-label="Cerrar">×</a>
+            <figure class="lightbox__figure">
+              <img src="assets/proctoetic/10-correcciones-bandeja.png" alt="Correcciones bandeja" />
+              <figcaption>
+                <span class="lightbox__caption">Correcciones bandeja</span>
+                <span class="lightbox__count">10/10</span>
+              </figcaption>
+            </figure>
           </div>
         </article>
       </section>
