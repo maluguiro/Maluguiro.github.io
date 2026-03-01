@@ -657,19 +657,7 @@ a.btn{ border-bottom: 0; }
     box-shadow: 0 14px 28px rgba(0,0,0,.22);
   }
 
-  /* ✅ abanico real + paper-3 desde RIGHT */
-  .folder-mouth .paper-1{
-    left: 80px;
-    transform: rotate(-10deg);
-  }
-  .folder-mouth .paper-2{
-    left: 70px;
-    transform: rotate(0deg);
-  }
-  .folder-mouth .paper-3{
-    right: 30px;
-    transform: rotate(10deg);
-  }
+
 
   /* tapa más el “cuerpo” de los papers = se sienten adentro */
   .folder-front{
