@@ -659,3 +659,20 @@ a.btn{ border-bottom: 0; }
 }
 .folder-hit{ transform: translateY(-60px); }
 .folder-hit:hover{ transform: translateY(-70px); }
+.chat-bubble{
+  text-shadow: 0 10px 28px rgba(0,0,0,0.30);
+}
+
+.chat-bubble.is-on-light{
+  background: rgba(255,255,255,0.88);
+  border-color: rgba(201,120,151,0.35);
+  color: rgba(201,120,151,0.95);
+  text-shadow: none;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+}
+/* Ajuste burbuja Contactar */
+.chat-bubble{
+  min-width: 110px;
+  padding: 10px 16px;
+  height: auto;
+}

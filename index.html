@@ -62,7 +62,7 @@
         <h2>Proyectos</h2>
 
         <article class="card">
-          <h3>ProctorEtic — Plataforma de examenes con monitoreo antifraude</h3>
+          <h3>ProctoEtic — Plataforma de examenes con monitoreo antifraude</h3>
           <p class="muted">
             Aplicacion web en desarrollo end-to-end para crear, rendir y supervisar examenes online, con trazabilidad de eventos y
             herramientas de correccion docente.
@@ -94,7 +94,7 @@
               </div>
               <img class="folder-front" src="assets/ui/proctoetic-folder_front.png" alt="">
               <div class="folder-label">
-                <div class="folder-title">ProctorEtic</div>
+                <div class="folder-title">ProctoEtic</div>
                 <div class="folder-sub">Click para abrir</div>
               </div>
             </a>
@@ -140,15 +140,15 @@
     class="chat-bubble"
     href="mailto:mguiro21@gmail.com?subject=Contacto%20desde%20tu%20portfolio&body=Hola%20Malena%2C%0D%0AVi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte.%0D%0A%0D%0AGracias!"
     aria-label="Enviar email a Malena"
-    title="Hola! Enviame un email"
+    title="Contactar"
   >
-    Hola!
+    Contactar
   </a>
   <div class="pe-modal" data-pe-modal aria-hidden="true">
     <div class="pe-modal__backdrop" data-close></div>
     <div class="pe-modal__panel" role="dialog" aria-modal="true" aria-label="Galeria ProctorEtic">
       <button class="pe-modal__close" type="button" data-close aria-label="Cerrar">&times;</button>
-      <button class="pe-modal__nav pe-modal__nav--prev" type="button" data-prev aria-label="Anterior">&#8592;</button>
+      <button class="pe-modal__nav pe-modal__nav--prev" type="button" data-prev aria-label="Anterior">&lsaquo;</button>
       <figure class="pe-modal__figure">
         <img data-modal-img src="" alt="">
         <figcaption>
@@ -156,7 +156,7 @@
           <span data-modal-count></span>
         </figcaption>
       </figure>
-      <button class="pe-modal__nav pe-modal__nav--next" type="button" data-next aria-label="Siguiente">&#8594;</button>
+      <button class="pe-modal__nav pe-modal__nav--next" type="button" data-next aria-label="Siguiente">&rsaquo;</button>
     </div>
   </div>
 
@@ -238,6 +238,23 @@
         if (e.key === "ArrowLeft") prev();
       });
     })();
+  </script>
+  <script>
+  (function () {
+    const bubble = document.querySelector('.chat-bubble');
+    const header = document.querySelector('.site-header');
+    if (!bubble || !header) return;
+
+    function update() {
+      const headerBottom = header.getBoundingClientRect().bottom;
+      const onLight = headerBottom < 80;
+      bubble.classList.toggle('is-on-light', onLight);
+    }
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+  })();
   </script>
 </body>
 </html>
