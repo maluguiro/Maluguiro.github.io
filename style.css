@@ -630,24 +630,61 @@ a.btn{ border-bottom: 0; }
 
 /* Responsive */
 @media (max-width: 640px){
-  .folder-hit{ height:280px; } /* un poco m�s alto para que no se �aplane� */
+  /* más compacto para que no “caiga” a Skills */
+  .folder-hit{ height:260px; }
 
-  .folder-back, .folder-front{ width:min(380px, 94%); max-width:94%; }
+  /* carpeta un poquito más chica */
+  .folder-back, .folder-front{
+    width: 340px;
+    max-width: 92%;
+  }
 
-  .folder-mouth{ width:min(420px, 96%); height:105px; top:72px; }
+  /* ✅ SUBIMOS la boca y la hacemos un poco más alta */
+  .folder-mouth{
+    width: 360px;
+    max-width: 94%;
+    height: 120px;     /* más alto = más "peek" sin que salga entero */
+    top: 58px;         /* clave: arriba */
+  }
 
-  .folder-mouth .paper{ width:230px; height:160px; top:26px; }
+  /* ✅ papers más chicos, más juntos, más “vivos” */
+  .folder-mouth .paper{
+    width: 190px;
+    height: 150px;
+    top: 34px;         /* baja papers dentro de la boca */
+    border-radius: 12px;
+    opacity: .98;      /* menos lavado */
+    box-shadow: 0 14px 28px rgba(0,0,0,.22);
+  }
 
-  /* ? Abanico correcto (paper-3 con RIGHT) */
-  .folder-mouth .paper-1{ left:6px;  transform: rotate(-7deg); }
-  .folder-mouth .paper-2{ left:92px; transform: rotate(1deg); }
-  .folder-mouth .paper-3{ right:6px; transform: rotate(8deg); }
+  /* ✅ abanico real + paper-3 desde RIGHT */
+  .folder-mouth .paper-1{
+    left: 10px;
+    transform: rotate(-10deg);
+  }
+  .folder-mouth .paper-2{
+    left: 86px;
+    transform: rotate(0deg);
+  }
+  .folder-mouth .paper-3{
+    right: 10px;
+    transform: rotate(10deg);
+  }
 
-  .folder-front{ top:112px; }
+  /* tapa más el “cuerpo” de los papers = se sienten adentro */
+  .folder-front{
+    top: 108px;
+  }
 
-  .folder-label{ top:188px; width:90%; }
+  /* etiqueta un poco más arriba y con ancho para que no tape */
+  .folder-label{
+    top: 172px;
+    width: 92%;
+  }
+  .folder-title{ font-size: 28px; }
+  .folder-cta{ font-size: 12px; }
 
-  /* ? evita �saltos� en touch */
+  /* en touch evitamos hover raro */
   .folder-hit:hover{ transform:none; }
   .folder-hit:hover .folder-mouth .paper{ transform:none; }
 }
