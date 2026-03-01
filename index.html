@@ -64,7 +64,7 @@
         <article class="card">
           <h3>ProctorEtic â€” Plataforma de examenes con monitoreo antifraude</h3>
           <p class="muted">
-            Aplicacion web end-to-end para crear, rendir y supervisar examenes online, con trazabilidad de eventos y
+            Aplicacion web en desarrollo end-to-end para crear, rendir y supervisar examenes online, con trazabilidad de eventos y
             herramientas de correccion docente.
           </p>
 
@@ -82,24 +82,23 @@
 
           <div class="links">
             <button class="btn" type="button" data-open-gallery>Ver flujo</button>
-            <a class="btn" href="#contacto">Contactar</a>
+            
           </div>
-          <div class="pe-folderHero">
-            <button class="pe-folderHero__btn" type="button" data-open-gallery aria-label="Abrir galeria ProctorEtic">
-              <div class="pe-folderHero__stage" aria-hidden="true">
-                <img class="pe-folderHero__shot pe-folderHero__shot--a" src="assets/proctoetic/02-dashboard.png" alt="">
-                <img class="pe-folderHero__shot pe-folderHero__shot--b" src="assets/proctoetic/07-tablero-control.png" alt="">
-                <img class="pe-folderHero__shot pe-folderHero__shot--c" src="assets/proctoetic/10-correcciones-bandeja.png" alt="">
-                <img class="pe-folderHero__cover" src="assets/ui/folder-proctoetic.png" alt="">
+                    <div class="folder-gallery">
+            <a class="folder-hit" data-open-gallery href="#pe-1" aria-label="Abrir galerÃ­a ProctorEtic">
+              <img class="folder-back" src="assets/ui/proctoetic-folder_back.png" alt="" aria-hidden="true">
+              <div class="folder-mouth">
+                <img class="paper paper-1" src="assets/proctoetic/02-dashboard.png" alt="">
+                <img class="paper paper-2" src="assets/proctoetic/04-configuracion-docente.png" alt="">
+                <img class="paper paper-3" src="assets/proctoetic/10-correcciones-bandeja.png" alt="">
               </div>
-
-              <div class="pe-folderHero__meta">
-                <div class="pe-folderHero__title">ProctorEtic</div>
-                <div class="pe-folderHero__subtitle">Galeria del flujo (10 capturas)</div>
-                <div class="pe-folderHero__cta">Abrir</div>
+              <img class="folder-front" src="assets/ui/proctoetic-folder_front.png" alt="">
+              <div class="folder-label">
+                <div class="folder-title">ProctorEtic</div>
+                <div class="folder-sub">Click para abrir</div>
               </div>
-            </button>
-          </div></article>
+            </a>
+          </div>        </article>
       </section>
 
       <section>
@@ -148,8 +147,8 @@
   <div class="pe-modal" data-pe-modal aria-hidden="true">
     <div class="pe-modal__backdrop" data-close></div>
     <div class="pe-modal__panel" role="dialog" aria-modal="true" aria-label="Galeria ProctorEtic">
-      <button class="pe-modal__close" type="button" data-close aria-label="Cerrar">×</button>
-      <button class="pe-modal__nav pe-modal__nav--prev" type="button" data-prev aria-label="Anterior">‹</button>
+      <button class="pe-modal__close" type="button" data-close aria-label="Cerrar">&times;</button>
+      <button class="pe-modal__nav pe-modal__nav--prev" type="button" data-prev aria-label="Anterior">&#8592;</button>
       <figure class="pe-modal__figure">
         <img data-modal-img src="" alt="">
         <figcaption>
@@ -157,7 +156,7 @@
           <span data-modal-count></span>
         </figcaption>
       </figure>
-      <button class="pe-modal__nav pe-modal__nav--next" type="button" data-next aria-label="Siguiente">›</button>
+      <button class="pe-modal__nav pe-modal__nav--next" type="button" data-next aria-label="Siguiente">&#8594;</button>
     </div>
   </div>
 
@@ -172,9 +171,9 @@
         { src: "assets/proctoetic/06-preguntas.png", caption: "Preguntas" },
         { src: "assets/proctoetic/07-tablero-control.png", caption: "Tablero de control" },
         { src: "assets/proctoetic/08-tablero-chat.png", caption: "Tablero + chat" },
-        { src: "assets/proctoetic/09-correccion-detalle.png", caption: "Correccion (detalle)" },
-        { src: "assets/proctoetic/10-correcciones-bandeja.png", caption: "Bandeja de correcciones" }
-      ];
+         { src: "assets/proctoetic/10-correcciones-bandeja.png", caption: "Bandeja de correcciones" },
+        { src: "assets/proctoetic/09-correccion-detalle.png", caption: "Correccion (detalle)" }
+       ];
 
       var modal = document.querySelector("[data-pe-modal]");
       if (!modal) return;
