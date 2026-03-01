@@ -585,9 +585,9 @@ a.btn{ border-bottom: 0; }
 }
 
 /* Fan positions (M�S JUNTAS, menos salida lateral) */
-.folder-mouth .paper-1{ left:105px;  transform: rotate(-7deg); }
-.folder-mouth .paper-2{ left:135px; transform: rotate(1deg); }
-.folder-mouth .paper-3{ left:150px; transform: rotate(8deg); } /* en vez de right */
+.folder-mouth .paper-1{ left:85px;  transform: rotate(-7deg); }
+.folder-mouth .paper-2{ left:105px; transform: rotate(1deg); }
+.folder-mouth .paper-3{ left:120px; transform: rotate(8deg); } /* en vez de right */
 
 /* Front cover sits ON TOP of papers, hiding their bottom */
 .folder-front{
