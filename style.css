@@ -630,33 +630,28 @@ a.btn{ border-bottom: 0; }
 
 /* Responsive */
 @media (max-width: 640px){
-  .folder-hit{ height:270px; } /* antes 300 */
+  .folder-hit{ height:280px; } /* un poco más alto para que no se “aplane” */
 
-  .folder-back, .folder-front{
-    width:400px;            /* antes 420 */
-    max-width:96%;
-  }
+  .folder-back, .folder-front{ width:min(380px, 94%); max-width:94%; }
 
-  .folder-mouth{
-    width:420px;            /* antes 460 */
-    height:105px;           /* antes 120 */
-    top:62px;               /* antes 78 -> SUBE */
-  }
+  .folder-mouth{ width:min(420px, 96%); height:105px; top:72px; }
 
-  .folder-mouth .paper{
-    width:220px;            /* antes 260 */
-    height:160px;           /* antes 180 */
-    top:26px;               /* antes 30 */
-  }
+  .folder-mouth .paper{ width:230px; height:160px; top:26px; }
 
-  /* mï¿½s juntas en mobile */
-  .folder-mouth .paper-1{ left:50px; }
-  .folder-mouth .paper-2{ left:120px; }
-  .folder-mouth .paper-3{ left:190px; }
+  /* ? Abanico correcto (paper-3 con RIGHT) */
+  .folder-mouth .paper-1{ left:6px;  transform: rotate(-7deg); }
+  .folder-mouth .paper-2{ left:92px; transform: rotate(1deg); }
+  .folder-mouth .paper-3{ right:6px; transform: rotate(8deg); }
 
-  .folder-front{ top:88px; }   /* antes 118 */
-  .folder-label{ top:165px; }  /* antes 196 */
+  .folder-front{ top:112px; }
+
+  .folder-label{ top:188px; width:90%; }
+
+  /* ? evita “saltos” en touch */
+  .folder-hit:hover{ transform:none; }
+  .folder-hit:hover .folder-mouth .paper{ transform:none; }
 }
+
 .folder-hit{ transform: translateY(-60px); }
 .folder-hit:hover{ transform: translateY(-70px); }
 .chat-bubble{
