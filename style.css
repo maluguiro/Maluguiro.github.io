@@ -550,7 +550,7 @@ a.btn{ border-bottom: 0; }
 
 /* Back behind everything */
 .folder-back{
-  top:34px;                 /* antes 52px -> SUBE */
+  top:40px;
   z-index:1;
   filter: drop-shadow(0 14px 30px rgba(0,0,0,.12));
   opacity:.98;
@@ -561,10 +561,10 @@ a.btn{ border-bottom: 0; }
   position:absolute;
   left:50%;
   transform: translateX(-50%);
-  top:70px;                 /* antes 92px -> SUBE */
+  top:78px;
   width:520px;              /* antes 560px -> m�s angosto */
   max-width:96%;
-  height:120px;             /* antes 140px -> menos "asomo" */
+  height:125px;
   z-index:3;
   overflow:hidden;
   pointer-events:none;
@@ -573,11 +573,11 @@ a.btn{ border-bottom: 0; }
 /* Papers */
 .folder-mouth .paper{
   position:absolute;
-  top:50px;                 /* antes 34px -> levemente arriba */
-  width:270px;              /* antes 320px -> M�S CHICOS */
-  height:190px;             /* antes 220px -> M�S CHICOS */
+  top:30px;
+  width:290px;
+  height:200px;
   object-fit:cover;
-  border-radius:14px;
+  border-radius:12px;
   box-shadow: 0 18px 40px rgba(0,0,0,.18);
   opacity:.94;
   transform-origin:center;
@@ -585,13 +585,13 @@ a.btn{ border-bottom: 0; }
 }
 
 /* Fan positions (M�S JUNTAS, menos salida lateral) */
-.folder-mouth .paper-1{ left:125px;  transform: rotate(-7deg); }
-.folder-mouth .paper-2{ left:125px; transform: rotate(1deg); }
-.folder-mouth .paper-3{ left:100px; transform: rotate(8deg); } /* en vez de right */
+.folder-mouth .paper-1{ left:88px;  transform: rotate(-7deg) scale(0.85); }
+.folder-mouth .paper-2{ left:135px; transform: rotate(1deg) scale(0.90); }
+.folder-mouth .paper-3{ right:77px; transform: rotate(8deg) scale(0.82); }
 
 /* Front cover sits ON TOP of papers, hiding their bottom */
 .folder-front{
-  top:92px;                 /* antes 122px -> SUBE */
+  top:105px;
   z-index:6;
   filter: drop-shadow(0 22px 45px rgba(0,0,0,.22));
 }
@@ -601,7 +601,7 @@ a.btn{ border-bottom: 0; }
   position:absolute;
   left:50%;
   transform: translateX(-50%);
-  top:205px;                /* antes 214px -> SUBE */
+  top:195px;
   z-index:7;
   text-align:center;
   pointer-events:none;
@@ -626,7 +626,7 @@ a.btn{ border-bottom: 0; }
 .folder-hit:hover .folder-mouth .paper{ opacity:.98; }
 .folder-hit:hover .folder-mouth .paper-1{ transform: rotate(-8deg) translateY(-8px); }
 .folder-hit:hover .folder-mouth .paper-2{ transform: rotate(0.5deg) translateY(-8px); }
-.folder-hit:hover .folder-mouth .paper-3{ transform: rotate(7deg) translateY(-8px); }
+.folder-hit:hover .folder-mouth .paper-3{ transform: rotate(7deg) translateY(-8px) scale(0.95); }
 
 /* Responsive */
 @media (max-width: 640px){
@@ -688,7 +688,6 @@ a.btn{ border-bottom: 0; }
   .folder-hit:hover{ transform:none; }
   .folder-hit:hover .folder-mouth .paper{ transform:none; }
 }
-
 .folder-hit{ transform: translateY(-60px); }
 .folder-hit:hover{ transform: translateY(-70px); }
 .chat-bubble{
