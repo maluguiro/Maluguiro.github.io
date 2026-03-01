@@ -649,8 +649,8 @@ a.btn{ border-bottom: 0; }
 
   /* ✅ papers más chicos, más juntos, más “vivos” */
   .folder-mouth .paper{
-    width: 190px;
-    height: 150px;
+    width: 175px;
+    height: 140px;
     top: 34px;         /* baja papers dentro de la boca */
     border-radius: 12px;
     opacity: .98;      /* menos lavado */
@@ -659,15 +659,15 @@ a.btn{ border-bottom: 0; }
 
   /* ✅ abanico real + paper-3 desde RIGHT */
   .folder-mouth .paper-1{
-    left: 10px;
+    left: 6px;
     transform: rotate(-10deg);
   }
   .folder-mouth .paper-2{
-    left: 86px;
+    left: 72px;
     transform: rotate(0deg);
   }
   .folder-mouth .paper-3{
-    right: 10px;
+    right: 6px;
     transform: rotate(10deg);
   }
 
