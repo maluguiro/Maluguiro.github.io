@@ -630,7 +630,7 @@ a.btn{ border-bottom: 0; }
 
 /* Responsive */
 @media (max-width: 640px){
-  .folder-hit{ height:280px; } /* un poco más alto para que no se “aplane” */
+  .folder-hit{ height:200px; } /* un poco mï¿½s alto para que no se ï¿½aplaneï¿½ */
 
   .folder-back, .folder-front{ width:min(380px, 94%); max-width:94%; }
 
@@ -647,7 +647,7 @@ a.btn{ border-bottom: 0; }
 
   .folder-label{ top:188px; width:90%; }
 
-  /* ? evita “saltos” en touch */
+  /* ? evita ï¿½saltosï¿½ en touch */
   .folder-hit:hover{ transform:none; }
   .folder-hit:hover .folder-mouth .paper{ transform:none; }
 }
