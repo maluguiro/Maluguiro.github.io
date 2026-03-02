@@ -659,15 +659,15 @@ a.btn{ border-bottom: 0; }
 
   /* ✅ abanico real + paper-3 desde RIGHT */
   .folder-mouth .paper-1{
-    left: 4px;
+    left: 15px;
     transform: rotate(-6deg) scale(0.95) ;
   }
   .folder-mouth .paper-2{
-    left: 60px;
+    left: 55px;
     transform: rotate(0deg) scale(0.95);
   }
   .folder-mouth .paper-3{
-    right: 4px;
+    right: 15px;
     transform: rotate(6deg) scale(0.95) ;
   }
 
