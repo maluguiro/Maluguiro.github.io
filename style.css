@@ -668,7 +668,7 @@ a.btn{ border-bottom: 0; }
   }
   .folder-mouth .paper-3{
     right: 4px;
-    transform: rotate(6deg);
+    transform: rotate(6deg) scale(0.95);
   }
 
   /* tapa más el “cuerpo” de los papers = se sienten adentro */
