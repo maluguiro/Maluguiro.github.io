@@ -239,7 +239,11 @@ a.btn{ border-bottom: 0; }
 
 .project-card--secondary{
   box-shadow: 0 8px 18px rgba(0,0,0,0.05);
-  padding-bottom: 18px;
+  padding-bottom: 22px;
+}
+
+.project-card--secondary .links{
+  margin-bottom: 2px;
 }
 
 /* Skills tags */
@@ -286,6 +290,44 @@ a.btn{ border-bottom: 0; }
 }
 .features li{ margin: 4px 0; }
 
+.instant-strip{
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.instant-strip a{
+  display: block;
+  padding: 6px;
+  border-radius: 16px;
+  background: rgba(217,138,167,0.12);
+  border: 1px solid rgba(217,138,167,0.22);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.instant-strip img{
+  display: block;
+  width: 100px;
+  aspect-ratio: 9 / 19;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+.instant-strip a:hover{
+  transform: translateY(-3px);
+  background: rgba(217,138,167,0.16);
+  box-shadow: 0 14px 24px rgba(0,0,0,0.10);
+}
+
+.pe-modal:target{
+  display: flex;
+}
+
 
 .pe-modal{
   position: fixed;
@@ -311,12 +353,14 @@ a.btn{ border-bottom: 0; }
   z-index: 1;
   width: min(92vw, 980px);
   max-height: 90vh;
-  background: #fff;
+  background: #d6d2c9;
+  border: 1px solid rgba(217,138,167,0.18);
   border-radius: 16px;
   padding: 16px 18px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 26px 60px rgba(0,0,0,0.18);
 }
 
 .pe-modal__figure{
