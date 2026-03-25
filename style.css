@@ -208,6 +208,40 @@ a.btn{ border-bottom: 0; }
 .card.compact p{ margin: 0; }
 .card.compact h3{ margin-bottom: 6px; }
 
+.project-card__header{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-status{
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(201,120,151,0.25);
+  background: rgba(201,120,151,0.12);
+  color: rgba(201,120,151,0.95);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.project-lead{
+  margin: 10px 0 0;
+  color: #5a5450;
+}
+
+.project-role{
+  margin: 12px 0 0;
+  color: #5a5450;
+}
+
+.project-card--secondary{
+  box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+  padding-bottom: 18px;
+}
+
 /* Skills tags */
 .tags{
   list-style: none;
@@ -630,63 +664,42 @@ a.btn{ border-bottom: 0; }
 
 /* Responsive */
 @media (max-width: 640px){
-  /* más compacto para que no “caiga” a Skills */
-  .folder-hit{ height:260px; }
+  .folder-hit{ height: 260px; }
 
-  /* carpeta un poquito más chica */
   .folder-back, .folder-front{
-    width: 340px;
-    max-width: 92%;
-  }
-
-  /* ✅ SUBIMOS la boca y la hacemos un poco más alta */
-  .folder-mouth{
     width: 360px;
     max-width: 94%;
-    height: 120px;     /* más alto = más "peek" sin que salga entero */
-    top: 58px;         /* clave: arriba */
   }
 
-  /* ✅ papers más chicos, más juntos, más “vivos” */
-  .folder-mouth .paper{
-    width: 125px;
+  .folder-mouth{
+    width: 410px;
+    max-width: 96%;
     height: 110px;
-    top: 34px;         /* baja papers dentro de la boca */
-    border-radius: 12px;
-    opacity: .98;      /* menos lavado */
-    box-shadow: 0 14px 28px rgba(0,0,0,.22);
+    top: 64px;
   }
 
-  /* ✅ abanico real + paper-3 desde RIGHT */
+  .folder-mouth .paper{
+    width: 190px;
+    height: 150px;
+    top: 28px;
+    border-radius: 12px;
+  }
+
   .folder-mouth .paper-1{
-    left: 15px;
-    transform: rotate(10deg) scale(0.105) ;
+    left: 52px;
+    transform: rotate(-9deg) scale(0.92);
   }
   .folder-mouth .paper-2{
-    left: 55px;
-    transform: rotate(0deg) scale(0.75);
+    left: 120px;
+    transform: rotate(0deg) scale(0.91);
   }
   .folder-mouth .paper-3{
-    right: -100px;
-    transform: rotate(6deg) scale(0.105) ;
+    right: 52px;
+    transform: rotate(8deg) scale(0.90);
   }
 
-  /* tapa más el “cuerpo” de los papers = se sienten adentro */
-  .folder-front{
-    top: 108px;
-  }
-
-  /* etiqueta un poco más arriba y con ancho para que no tape */
-  .folder-label{
-    top: 172px;
-    width: 92%;
-  }
-  .folder-title{ font-size: 28px; }
-  .folder-cta{ font-size: 12px; }
-
-  /* en touch evitamos hover raro */
-  .folder-hit:hover{ transform:none; }
-  .folder-hit:hover .folder-mouth .paper{ transform:none; }
+  .folder-front{ top: 98px; }
+  .folder-label{ top: 156px; }
 }
 .folder-hit{ transform: translateY(-60px); }
 .folder-hit:hover{ transform: translateY(-70px); }
