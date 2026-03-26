@@ -307,6 +307,7 @@ a.btn{ border-bottom: 0; }
   border: 1px solid rgba(217,138,167,0.22);
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  cursor: pointer;
 }
 
 .instant-strip img{
@@ -319,13 +320,15 @@ a.btn{ border-bottom: 0; }
 }
 
 .instant-strip a:hover{
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.02);
   background: rgba(217,138,167,0.16);
-  box-shadow: 0 14px 24px rgba(0,0,0,0.10);
+  box-shadow: 0 18px 30px rgba(0,0,0,0.12);
 }
 
 .pe-modal:target{
   display: flex;
+  opacity: 1;
+  animation: peFadeIn 180ms ease;
 }
 
 
@@ -333,10 +336,17 @@ a.btn{ border-bottom: 0; }
   position: fixed;
   inset: 0;
   display: none;
+  opacity: 0;
+  transition: opacity 180ms ease;
   align-items: center;
   justify-content: center;
   background: rgba(0,0,0,0.7);
   z-index: 10000;
+}
+
+@keyframes peFadeIn{
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .pe-modal[aria-hidden="false"]{
