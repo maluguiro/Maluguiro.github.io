@@ -351,6 +351,7 @@ a.btn{ border-bottom: 0; }
 
 .pe-modal[aria-hidden="false"]{
   display: flex;
+  opacity: 1;
 }
 
 .pe-modal__backdrop{
