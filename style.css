@@ -1,6 +1,6 @@
 :root{
   --ink: #1b1b1b;
-  --muted: #6b6b6b;
+  --muted: #3f3f3f;
 
   /* body inferior */
   --page-gray: #e9e6e1;
@@ -25,9 +25,9 @@ body{
 }
 
 .container{
-  max-width: 980px;
+  max-width: 1360px;
   margin: 0 auto;
-  padding: 22px;
+  padding: 22px 24px;
 }
 
 /* ===== HEADER con IMAGEN TEXTIL ===== */
@@ -118,7 +118,7 @@ body{
   background: var(--card-white);
   border: 1px solid var(--border-soft);
   border-radius: 12px;
-  padding: 28px;
+  padding: 28px 30px;
   box-shadow: 0 16px 40px rgba(0,0,0,0.10);
 }
 
@@ -138,7 +138,7 @@ h3{
   color: var(--pink-soft-2);
 }
 
-.muted{ color: #6a6460; }
+.muted{ color: var(--muted); }
 
 .paper-card a{
   color: var(--pink-soft-2);
@@ -229,12 +229,12 @@ a.btn{ border-bottom: 0; }
 
 .project-lead{
   margin: 10px 0 0;
-  color: #5a5450;
+  color: var(--muted);
 }
 
 .project-role{
   margin: 12px 0 0;
-  color: #5a5450;
+  color: var(--muted);
 }
 
 .project-card--secondary{
@@ -286,7 +286,7 @@ a.btn{ border-bottom: 0; }
 .features{
   margin: 10px 0 0;
   padding-left: 18px;
-  color: #6a6460;
+  color: var(--muted);
 }
 .features li{ margin: 4px 0; }
 
@@ -428,20 +428,57 @@ a.btn{ border-bottom: 0; }
 /* Highlights mini cards */
 .grid-3{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 14px;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+  align-items: stretch;
 }
 
 .mini-card{
   background: #fff;
   border: 1px solid var(--border-soft);
   border-radius: 12px;
-  padding: 14px;
+  padding: 12px;
   box-shadow: 0 10px 22px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
-.mini-card h3{ margin: 0 0 8px; }
+.mini-card h3{ margin: 0 0 6px; }
+.mini-card p{ margin: 0; }
+
+.mini-card__top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mini-card__open{
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(201,120,151,0.35);
+  color: var(--pink-soft-2);
+  background: rgba(201,120,151,0.06);
+  text-decoration: none;
+  border-bottom: 0;
+  flex-shrink: 0;
+}
+
+.mini-card__open:hover{
+  border-color: rgba(201,120,151,0.85);
+}
+
+.mini-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.08);
+}
 
 /* footer inferior */
 .paper-footer{
@@ -455,7 +492,7 @@ a.btn{ border-bottom: 0; }
 .chat-bubble{
   position: fixed;
   top: 14px;
-  left: 14px;
+  right: 14px;
   z-index: 9999;
 
   display: inline-flex;
@@ -486,9 +523,18 @@ a.btn{ border-bottom: 0; }
 
 /* responsive */
 @media (max-width: 860px){
+  .grid-3{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px){
   .grid-3{ grid-template-columns: 1fr; }
 }
 @media (max-width: 720px){
+  .container{
+    padding: 20px;
+  }
+  .paper-card{
+    padding: 24px;
+  }
   .brand{ width: 100%; }
 }
 @media (max-width: 480px){
@@ -601,7 +647,7 @@ a.btn{ border-bottom: 0; }
   .pe-folderHero__shot{ width: 68%; }
 }
 /* =========================
-   ProctorEtic Folder (final)
+   ProctoEtic Folder (final)
    - papers feel INSIDE
    - uses "mouth" clipping (overflow:hidden)
    ========================= */
