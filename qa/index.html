@@ -12,7 +12,15 @@
     <div class="container header-inner">
       <div class="brand">
         <h1 class="brand-title">QA Lab</h1>
-        <p class="brand-subtitle">Casos de prueba, bugs documentados, evidencias visuales y automatizaciones.</p>
+        <p class="brand-subtitle">Incidentes reales documentados sobre productos web y mobile.</p>
+
+        <div class="qa-hero-pills" aria-label="Enfoques QA Lab">
+          <span class="pill">Debugging</span>
+          <span class="pill">Validación funcional</span>
+          <span class="pill">Automatización</span>
+          <span class="pill">CI/CD</span>
+          <span class="pill">Evidencias técnicas</span>
+        </div>
 
         <div class="brand-links">
           <a class="btn" href="/">Volver al portfolio</a>
@@ -25,18 +33,247 @@
   <div class="paper-wrap">
     <main class="container paper-card">
       <section class="qa-intro">
-        <h2>Registro de prácticas QA</h2>
+        <h2>¿Qué es QA Lab?</h2>
+        <div class="qa-copy">
+          <p class="muted">
+            Registro de incidentes reales documentados durante el desarrollo y mantenimiento de aplicaciones web y mobile.
+          </p>
+          <p class="muted">
+            Cada caso resume el problema, la investigación realizada, la solución aplicada y las evidencias utilizadas para validar el resultado.
+          </p>
+        </div>
+      </section>
+
+      <section class="qa-cases">
+        <h2>Casos documentados</h2>
         <p class="muted">
-          Espacio dedicado a documentar pruebas funcionales, análisis de bugs, validación de flujos y evidencias obtenidas en proyectos reales.
+          Cada caso reúne incidentes reales, evidencias técnicas y aprendizajes obtenidos durante el trabajo sobre productos concretos.
         </p>
 
-        <div class="qa-notice" role="status" aria-live="polite">
-          <p>
-            Contenido en actualización: estoy incorporando registros reales de testing, bugs documentados, evidencias visuales y automatización sobre proyectos web/mobile.
-          </p>
+        <div class="qa-case-grid">
+          <article class="card qa-case-card qa-case-card--mauri" data-project-card="mauri">
+            <div class="qa-case-card__overlay"></div>
+            <div class="qa-case-card__content">
+            <div class="qa-case-card__label">PROYECTO 01</div>
+            <h3>MAURI / Gana la Fecha</h3>
+            <p class="muted">Freelance · Flutter · Firebase · GitHub Actions</p>
+            <p class="qa-case-status">Primer caso en desarrollo</p>
+            <button class="btn qa-case-trigger" type="button" data-target="mauri" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
+            </div>
+          </article>
+
+          <article class="card qa-case-card qa-case-card--proctoetic" data-project-card="proctoetic">
+            <div class="qa-case-card__overlay"></div>
+            <div class="qa-case-card__content">
+            <div class="qa-case-card__label">PROYECTO 02</div>
+            <h3>ProctoEtic</h3>
+            <p class="muted">Plataforma web · React/Next · Node/Express · PostgreSQL</p>
+            <p class="qa-case-status">Próximamente</p>
+            <button class="btn qa-case-trigger" type="button" data-target="proctoetic" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
+            </div>
+          </article>
+
+          <article class="card qa-case-card qa-case-card--instant" data-project-card="instant">
+            <div class="qa-case-card__overlay"></div>
+            <div class="qa-case-card__content">
+            <div class="qa-case-card__label">PROYECTO 03</div>
+            <h3>Instant</h3>
+            <p class="muted">App mobile · React Native/Expo · Android · UX QA</p>
+            <p class="qa-case-status">Próximamente</p>
+            <button class="btn qa-case-trigger" type="button" data-target="instant" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
+            </div>
+          </article>
+
+          <article class="card qa-case-card qa-case-card--neri" data-project-card="neri">
+            <div class="qa-case-card__overlay"></div>
+            <div class="qa-case-card__content">
+            <div class="qa-case-card__label">PROYECTO 04</div>
+            <h3>Neri</h3>
+            <p class="muted">Asistente personal · Mobile · IA · Debugging conversacional</p>
+            <p class="qa-case-status">Próximamente</p>
+            <button class="btn qa-case-trigger" type="button" data-target="neri" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="mauri" class="qa-entry qa-entry--mauri" hidden>
+        <div class="qa-entry__head">
+          <span class="qa-entry__label">PROYECTO 01</span>
+          <h2>MAURI / Gana la Fecha</h2>
+        </div>
+        <p class="qa-entry__meta muted">Proyecto freelance de mantenimiento, debugging, builds Android/Web y automatización de despliegues sobre una app Flutter/Firebase.</p>
+
+        <div class="qa-entry__grid">
+          <article class="card compact">
+            <h3>Resumen ejecutivo</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+
+          <article class="card compact">
+            <h3>Tecnologías</h3>
+            <p class="muted">Flutter · Firebase · Android · Web · GitHub Actions</p>
+          </article>
+
+          <article class="card compact">
+            <h3>Incidentes</h3>
+            <ul class="qa-incident-list">
+              <li>MAU-001 — Pipeline Android bloqueado</li>
+              <li>MAU-002 — Crash crítico Flutter Web</li>
+              <li>MAU-003 — Deployment Flutter Web</li>
+              <li>MAU-004 — Hardening Firebase / Hosting</li>
+            </ul>
+          </article>
+
+          <article class="card compact">
+            <h3>Aprendizajes</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="proctoetic" class="qa-entry qa-entry--proctoetic" hidden>
+        <div class="qa-entry__head">
+          <span class="qa-entry__label">PROYECTO 02</span>
+          <h2>ProctoEtic</h2>
+        </div>
+        <p class="qa-entry__meta muted">Plataforma web de evaluación y supervisión con foco en flujos funcionales, monitoreo y validación operativa.</p>
+
+        <div class="qa-entry__grid">
+          <article class="card compact">
+            <h3>Resumen ejecutivo</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+          <article class="card compact">
+            <h3>Tecnologías</h3>
+            <p class="muted">React/Next · Node/Express · PostgreSQL</p>
+          </article>
+          <article class="card compact">
+            <h3>Incidentes</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+          <article class="card compact">
+            <h3>Aprendizajes</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="instant" class="qa-entry qa-entry--instant" hidden>
+        <div class="qa-entry__head">
+          <span class="qa-entry__label">PROYECTO 03</span>
+          <h2>Instant</h2>
+        </div>
+        <p class="qa-entry__meta muted">App mobile orientada a validación funcional, pruebas de experiencia de uso y control de flujos sobre entorno Android.</p>
+
+        <div class="qa-entry__grid">
+          <article class="card compact">
+            <h3>Resumen ejecutivo</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+          <article class="card compact">
+            <h3>Tecnologías</h3>
+            <p class="muted">React Native/Expo · Android · UX QA</p>
+          </article>
+          <article class="card compact">
+            <h3>Incidentes</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+          <article class="card compact">
+            <h3>Aprendizajes</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="neri" class="qa-entry qa-entry--neri" hidden>
+        <div class="qa-entry__head">
+          <span class="qa-entry__label">PROYECTO 04</span>
+          <h2>Neri</h2>
+        </div>
+        <p class="qa-entry__meta muted">Asistente personal mobile con foco en debugging conversacional, validación de comportamiento y trazabilidad funcional.</p>
+
+        <div class="qa-entry__grid">
+          <article class="card compact">
+            <h3>Resumen ejecutivo</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+          <article class="card compact">
+            <h3>Tecnologías</h3>
+            <p class="muted">Mobile · IA · Debugging conversacional</p>
+          </article>
+          <article class="card compact">
+            <h3>Incidentes</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
+          <article class="card compact">
+            <h3>Aprendizajes</h3>
+            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
+          </article>
         </div>
       </section>
     </main>
   </div>
+  <script>
+    (() => {
+      const triggers = document.querySelectorAll('.qa-case-trigger');
+      const cards = document.querySelectorAll('[data-project-card]');
+      const sections = document.querySelectorAll('.qa-entry');
+      let activeId = null;
+
+      function syncButtons(id) {
+        triggers.forEach((trigger) => {
+          const isActive = trigger.dataset.target === id;
+          trigger.textContent = isActive ? trigger.dataset.closeLabel : trigger.dataset.openLabel;
+          trigger.classList.toggle('is-active', isActive);
+          trigger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        });
+      }
+
+      function closeAll() {
+        sections.forEach((section) => {
+          section.hidden = true;
+          section.classList.remove('is-active');
+        });
+
+        cards.forEach((card) => {
+          card.classList.remove('is-active');
+        });
+
+        syncButtons(null);
+        activeId = null;
+      }
+
+      function openProject(id) {
+        closeAll();
+
+        const target = document.getElementById(id);
+        const activeCard = document.querySelector(`[data-project-card="${id}"]`);
+
+        if (!target || !activeCard) return;
+
+        target.hidden = false;
+        target.classList.add('is-active');
+        activeCard.classList.add('is-active');
+        syncButtons(id);
+        activeId = id;
+
+        requestAnimationFrame(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const id = trigger.dataset.target;
+          if (activeId === id) {
+            closeAll();
+            return;
+          }
+          openProject(id);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
