@@ -386,6 +386,158 @@ body{
   color: var(--qa-accent-text);
 }
 
+.qa-tabs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  padding-bottom: 4px;
+}
+
+.qa-tab{
+  appearance: none;
+  border: 1px solid rgba(var(--qa-accent-rgb),0.16);
+  background: rgba(255,255,255,0.68);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 160ms ease, background 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+.qa-tab:hover{
+  border-color: rgba(var(--qa-accent-rgb),0.28);
+  color: var(--qa-accent-text);
+}
+
+.qa-tab.is-active{
+  border-color: rgba(var(--qa-accent-rgb),0.38);
+  background: rgba(var(--qa-accent-rgb),0.12);
+  color: var(--qa-accent-text);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.qa-tab-panels{
+  margin-top: 18px;
+}
+
+.qa-tab-panel{
+  border: 1px solid rgba(var(--qa-accent-rgb),0.14);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.76);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  padding: 18px;
+}
+
+.qa-tab-panel[hidden]{
+  display: none !important;
+}
+
+.qa-tab-panel p{
+  margin: 0;
+}
+
+.qa-tab-panel p + p{
+  margin-top: 10px;
+}
+
+.qa-fact-grid{
+  display: grid;
+  gap: 10px;
+}
+
+.qa-fact-row{
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) 1fr;
+  gap: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(var(--qa-accent-rgb),0.10);
+}
+
+.qa-fact-row:last-child{
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.qa-fact-key{
+  color: var(--qa-accent-text);
+  font-weight: 700;
+}
+
+.qa-fact-value{
+  color: var(--muted);
+}
+
+.qa-tech-groups{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.qa-tech-group{
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(var(--qa-accent-rgb),0.10);
+  background: rgba(255,255,255,0.60);
+}
+
+.qa-tech-group h3{
+  margin: 0 0 10px;
+  color: var(--qa-accent-text);
+  font-size: 15px;
+}
+
+.qa-tech-group .stack{
+  margin-top: 0;
+}
+
+.qa-incident-list--docs{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.qa-incident-list--docs li + li{
+  margin-top: 8px;
+}
+
+.qa-evidence-placeholder{
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px dashed rgba(var(--qa-accent-rgb),0.22);
+  background: rgba(var(--qa-accent-rgb),0.05);
+}
+
+.qa-evidence-placeholder strong{
+  display: block;
+  margin-bottom: 4px;
+  color: var(--qa-accent-text);
+}
+
+.qa-evidence-placeholder p{
+  margin: 0;
+  color: var(--muted);
+}
+
+.qa-evidence-placeholder--inline{
+  margin-top: 16px;
+}
+
+@media (max-width: 640px){
+  .qa-tabs{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .qa-fact-row{
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
 .qa-incident-list{
   margin: 0;
   padding-left: 18px;

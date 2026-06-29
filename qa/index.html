@@ -104,31 +104,82 @@
         </div>
         <p class="qa-entry__meta muted">Proyecto freelance de mantenimiento, debugging, builds Android/Web y automatización de despliegues sobre una app Flutter/Firebase.</p>
 
-        <div class="qa-entry__grid">
-          <article class="card compact">
-            <h3>Resumen ejecutivo</h3>
-            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
-          </article>
+        <div class="qa-tabs" role="tablist" aria-label="Secciones MAURI">
+          <button class="qa-tab is-active" type="button" role="tab" aria-selected="true" data-tab-target="mauri-overview">Ficha rápida</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="mauri-summary">Resumen</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="mauri-tech">Tecnologías</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="mauri-incidents">Incidentes</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="mauri-learnings">Aprendizajes</button>
+        </div>
 
-          <article class="card compact">
-            <h3>Tecnologías</h3>
-            <p class="muted">Flutter · Firebase · Android · Web · GitHub Actions</p>
-          </article>
+        <div class="qa-tab-panels">
+          <section id="mauri-overview" class="qa-tab-panel is-active" role="tabpanel">
+            <div class="qa-fact-grid">
+              <div class="qa-fact-row"><span class="qa-fact-key">Rol</span><span class="qa-fact-value">Proyecto freelance</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Tipo</span><span class="qa-fact-value">Mantenimiento correctivo y evolutivo</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Plataformas</span><span class="qa-fact-value">Android · Web</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Stack principal</span><span class="qa-fact-value">Flutter · Firebase</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Foco</span><span class="qa-fact-value">Debugging · Builds · CI/CD · Despliegues</span></div>
+            </div>
+          </section>
 
-          <article class="card compact">
-            <h3>Incidentes</h3>
-            <ul class="qa-incident-list">
-              <li>MAU-001 — Pipeline Android bloqueado</li>
-              <li>MAU-002 — Crash crítico Flutter Web</li>
-              <li>MAU-003 — Deployment Flutter Web</li>
-              <li>MAU-004 — Hardening Firebase / Hosting</li>
+          <section id="mauri-summary" class="qa-tab-panel" role="tabpanel" hidden>
+            <p class="muted">MAURI / Gana la Fecha fue un proyecto freelance de mantenimiento correctivo y evolutivo sobre una aplicación Flutter/Firebase y su landing web.</p>
+            <p class="muted">En esta sección se documentan incidentes relacionados con debugging, infraestructura, CI/CD, despliegues y validación técnica en un contexto de cliente real.</p>
+          </section>
+
+          <section id="mauri-tech" class="qa-tab-panel" role="tabpanel" hidden>
+            <div class="qa-tech-groups">
+              <article class="qa-tech-group">
+                <h3>Mobile / App</h3>
+                <ul class="stack">
+                  <li>Flutter</li>
+                  <li>Android Build</li>
+                </ul>
+              </article>
+
+              <article class="qa-tech-group">
+                <h3>Backend / Plataforma</h3>
+                <ul class="stack">
+                  <li>Firebase</li>
+                  <li>Firebase Hosting</li>
+                </ul>
+              </article>
+
+              <article class="qa-tech-group">
+                <h3>CI/CD</h3>
+                <ul class="stack">
+                  <li>GitHub Actions</li>
+                  <li>GitHub</li>
+                </ul>
+              </article>
+
+              <article class="qa-tech-group">
+                <h3>Control de versión</h3>
+                <ul class="stack">
+                  <li>Git</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section id="mauri-incidents" class="qa-tab-panel" role="tabpanel" hidden>
+            <ul class="qa-incident-list qa-incident-list--docs">
+              <li>MAU-001 — Pipeline Android bloqueado por configuración de build.</li>
+              <li>MAU-002 — Crash crítico durante el inicio de Flutter Web.</li>
+              <li>MAU-003 — Problemas de despliegue y publicación de la versión Web.</li>
+              <li>MAU-004 — Hardening de Firebase Hosting y reglas de seguridad.</li>
             </ul>
-          </article>
 
-          <article class="card compact">
-            <h3>Aprendizajes</h3>
-            <p class="muted">Contenido en documentación. Esta sección se completará con incidentes reales, evidencias y validaciones técnicas.</p>
-          </article>
+            <div class="qa-evidence-placeholder qa-evidence-placeholder--inline">
+              <strong>Evidencias previstas</strong>
+              <p>GitHub Actions overview · run fallido · run exitoso · artifacts generados · error Flutter Web · validación post-fix</p>
+            </div>
+          </section>
+
+          <section id="mauri-learnings" class="qa-tab-panel" role="tabpanel" hidden>
+            <p class="muted">Este proyecto permitió trabajar sobre problemas reales de mantenimiento, despliegue y validación técnica, integrando debugging, revisión de logs, configuración Firebase y automatización de builds.</p>
+          </section>
         </div>
       </section>
 
@@ -271,6 +322,27 @@
             return;
           }
           openProject(id);
+        });
+      });
+
+      const mauriTabs = document.querySelectorAll('#mauri .qa-tab');
+      const mauriPanels = document.querySelectorAll('#mauri .qa-tab-panel');
+
+      mauriTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const targetId = tab.dataset.tabTarget;
+
+          mauriTabs.forEach((item) => {
+            const active = item === tab;
+            item.classList.toggle('is-active', active);
+            item.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+
+          mauriPanels.forEach((panel) => {
+            const active = panel.id === targetId;
+            panel.classList.toggle('is-active', active);
+            panel.hidden = !active;
+          });
         });
       });
     })();
