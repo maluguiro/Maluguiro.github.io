@@ -7,12 +7,20 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 
-<body>
+<body class="qa-page">
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <h1 class="brand-title">QA Lab</h1>
-        <p class="brand-subtitle">Incidentes reales documentados sobre aplicaciones web y mobile.</p>
+        <p class="brand-subtitle">Incidentes reales documentados sobre productos web y mobile.</p>
+
+        <div class="qa-hero-pills" aria-label="Enfoques QA Lab">
+          <span class="pill">Debugging</span>
+          <span class="pill">Validación funcional</span>
+          <span class="pill">Automatización</span>
+          <span class="pill">CI/CD</span>
+          <span class="pill">Evidencias técnicas</span>
+        </div>
 
         <div class="brand-links">
           <a class="btn" href="/">Volver al portfolio</a>
@@ -25,12 +33,608 @@
   <div class="paper-wrap">
     <main class="container paper-card">
       <section class="qa-intro">
-        <h2>QA Lab en construcción</h2>
-               <div class="qa-notice" role="status" aria-live="polite">
-          <p>En esta sección, estoy incorporando progresivamente casos documentados de proyectos reales con foco en calidad de software, automatización y resolución de incidentes.</p>
+        <h2>¿Qué es QA Lab?</h2>
+        <div class="qa-copy">
+          <p class="muted">
+            Registro de incidentes reales documentados durante el desarrollo y mantenimiento de aplicaciones web y mobile.
+          </p>
+          <p class="muted">
+            Cada caso resume el problema, la investigación realizada, la solución aplicada y las evidencias utilizadas para validar el resultado.
+          </p>
+        </div>
+      </section>
+
+      <section class="qa-cases">
+        <h2>Casos documentados</h2>
+        <p class="muted">
+          Cada caso reúne incidentes reales, evidencias técnicas y aprendizajes obtenidos durante el trabajo sobre productos concretos.
+        </p>
+
+        <div class="qa-case-grid">
+          <article class="card qa-case-card qa-case-card--mauri" data-project-card="mauri">
+            <div class="qa-case-card__overlay"></div>
+            <div class="qa-case-card__content">
+            <div class="qa-case-card__label">PROYECTO 01</div>
+            <h3>Gana la Fecha</h3>
+            <p class="muted">Freelance · Flutter · Firebase · GitHub Actions</p>
+            <p class="qa-case-status">Primer caso en desarrollo</p>
+            <button class="btn qa-case-trigger" type="button" data-target="mauri" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
+            </div>
+          </article>
+
+          <article class="card qa-case-card qa-case-card--proctoetic" data-project-card="proctoetic">
+            <div class="qa-case-card__overlay"></div>
+            <div class="qa-case-card__content">
+            <div class="qa-case-card__label">PROYECTO 02</div>
+            <h3>ProctoEtic</h3>
+            <p class="muted">Plataforma web · React/Next · Node/Express · PostgreSQL</p>
+            <p class="qa-case-status">En documentación</p>
+            <button class="btn qa-case-trigger" type="button" data-target="proctoetic" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
+            </div>
+          </article>
+
+          <article class="card qa-case-card qa-case-card--instant" data-project-card="instant">
+            <div class="qa-case-card__overlay"></div>
+            <div class="qa-case-card__content">
+            <div class="qa-case-card__label">PROYECTO 03</div>
+            <h3>Instant</h3>
+            <p class="muted">App mobile · React Native/Expo · Android · UX QA</p>
+            <p class="qa-case-status">En documentación</p>
+            <button class="btn qa-case-trigger" type="button" data-target="instant" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
+            </div>
+          </article>
+
+          <article class="card qa-case-card qa-case-card--neri" data-project-card="neri">
+            <div class="qa-case-card__overlay"></div>
+            <div class="qa-case-card__content">
+            <div class="qa-case-card__label">PROYECTO 04</div>
+            <h3>Neri</h3>
+            <p class="muted">Asistente personal · Mobile · IA · Debugging conversacional</p>
+            <p class="qa-case-status">En documentación</p>
+            <button class="btn qa-case-trigger" type="button" data-target="neri" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="mauri" class="qa-entry qa-entry--mauri" hidden>
+        <div class="qa-entry__head">
+          <span class="qa-entry__label">PROYECTO 01</span>
+          <h2>Gana la Fecha</h2>
+        </div>
+        <p class="qa-entry__meta muted">Proyecto freelance de mantenimiento, debugging, builds Android/Web y automatización de despliegues sobre una app Flutter/Firebase.</p>
+
+        <div class="qa-overview-strip">
+          <div class="qa-overview-strip__head">
+            <h3>Overview</h3>
+            <p class="muted">Capturas generales del producto para contextualizar la documentación técnica.</p>
+          </div>
+
+          <div class="qa-media-grid qa-media-grid--overview">
+            <figure class="qa-media-card">
+              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/overview/01-login-mobile.png" data-lightbox-caption="Login">
+                <img src="../assets/qa/gana-la-fecha/overview/01-login-mobile.png" alt="Login de Gana la Fecha" loading="lazy">
+              </button>
+              <figcaption class="qa-media-caption">Login</figcaption>
+            </figure>
+
+            <figure class="qa-media-card">
+              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/overview/02-home-mobile.png" data-lightbox-caption="Home">
+                <img src="../assets/qa/gana-la-fecha/overview/02-home-mobile.png" alt="Home de Gana la Fecha" loading="lazy">
+              </button>
+              <figcaption class="qa-media-caption">Home</figcaption>
+            </figure>
+
+            <figure class="qa-media-card">
+              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/overview/03-menu-lateral-mobile.png" data-lightbox-caption="Menú lateral">
+                <img src="../assets/qa/gana-la-fecha/overview/03-menu-lateral-mobile.png" alt="Menú lateral de Gana la Fecha" loading="lazy">
+              </button>
+              <figcaption class="qa-media-caption">Menú lateral</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="qa-tabs" role="tablist" aria-label="Secciones Gana la Fecha">
+          <button class="qa-tab is-active" type="button" role="tab" aria-selected="true" data-tab-target="mauri-overview">Ficha rápida</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="mauri-summary">Resumen</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="mauri-tech">Tecnologías</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="mauri-incidents">Incidentes</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="mauri-learnings">Aprendizajes</button>
+        </div>
+
+        <div class="qa-tab-panels">
+          <section id="mauri-overview" class="qa-tab-panel is-active" role="tabpanel">
+            <div class="qa-fact-grid">
+              <div class="qa-fact-row"><span class="qa-fact-key">Rol</span><span class="qa-fact-value">Proyecto freelance</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Tipo</span><span class="qa-fact-value">Mantenimiento correctivo y evolutivo</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Plataformas</span><span class="qa-fact-value">Android · Web</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Stack principal</span><span class="qa-fact-value">Flutter · Firebase</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Foco</span><span class="qa-fact-value">Debugging · Builds · CI/CD · Despliegues</span></div>
+            </div>
+          </section>
+
+          <section id="mauri-summary" class="qa-tab-panel" role="tabpanel" hidden>
+            <p class="muted">Gana la Fecha fue un proyecto freelance de mantenimiento correctivo y evolutivo sobre una aplicación Flutter/Firebase y su landing web.</p>
+            <p class="muted">En esta sección se documentan incidentes relacionados con debugging, infraestructura, CI/CD, despliegues y validación técnica en un contexto de cliente real.</p>
+          </section>
+
+          <section id="mauri-tech" class="qa-tab-panel" role="tabpanel" hidden>
+            <div class="qa-tech-groups">
+              <article class="qa-tech-group">
+                <h3>Mobile / App</h3>
+                <ul class="stack">
+                  <li>Flutter</li>
+                  <li>Android Build</li>
+                </ul>
+              </article>
+
+              <article class="qa-tech-group">
+                <h3>Backend / Plataforma</h3>
+                <ul class="stack">
+                  <li>Firebase</li>
+                  <li>Firebase Hosting</li>
+                </ul>
+              </article>
+
+              <article class="qa-tech-group">
+                <h3>CI/CD</h3>
+                <ul class="stack">
+                  <li>GitHub Actions</li>
+                  <li>GitHub</li>
+                </ul>
+              </article>
+
+              <article class="qa-tech-group">
+                <h3>Control de versión</h3>
+                <ul class="stack">
+                  <li>Git</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section id="mauri-incidents" class="qa-tab-panel" role="tabpanel" hidden>
+            <div class="qa-incident-docs">
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">GLF-001</span>
+                    <h3>Pipeline Android bloqueado por configuración Firebase</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Alta</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Resuelto</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="glf-001-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="glf-001-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Descripción breve:</strong> El workflow de GitHub Actions fallaba durante la generación del APK Android porque el build no encontraba el archivo <code>google-services.json</code>, necesario para compilar la app con Firebase.</p>
+                    <p><strong>Resolución breve:</strong> Se ajustó el pipeline para reconstruir el archivo desde un secret de GitHub Actions antes de ejecutar el build, permitiendo generar correctamente el APK y el build web como artifacts.</p>
+                  </div>
+
+                  <div class="qa-evidence-block">
+                    <h4>Evidencias</h4>
+                    <div class="qa-media-grid">
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/incidents/GLF-001-pipeline-android-build/01-actions-history.png" data-lightbox-caption="Pipeline fallido">
+                          <img src="../assets/qa/gana-la-fecha/incidents/GLF-001-pipeline-android-build/01-actions-history.png" alt="Historial de GitHub Actions con pipeline fallido" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Pipeline fallido</figcaption>
+                      </figure>
+
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/incidents/GLF-001-pipeline-android-build/02-build-error-google-services.png" data-lightbox-caption="Error Google Services">
+                          <img src="../assets/qa/gana-la-fecha/incidents/GLF-001-pipeline-android-build/02-build-error-google-services.png" alt="Error Google Services durante el build Android" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Error Google Services</figcaption>
+                      </figure>
+
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/incidents/GLF-001-pipeline-android-build/03-build-success-artifacts.png" data-lightbox-caption="Pipeline exitoso">
+                          <img src="../assets/qa/gana-la-fecha/incidents/GLF-001-pipeline-android-build/03-build-success-artifacts.png" alt="Build exitoso con artifacts generados" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Pipeline exitoso</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">GLF-002</span>
+                    <h3>Crash crítico durante el inicio de Flutter Web</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Alta</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Resuelto</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="glf-002-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="glf-002-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Descripción breve:</strong> La versión web mostraba un error fatal al iniciar, con mensajes relacionados a valores nulos durante el arranque de la aplicación.</p>
+                    <p><strong>Resolución breve:</strong> Se revisó el flujo de inicialización de Firebase y el arranque web, incorporando diagnóstico por etapas y ajustes defensivos para estabilizar la carga inicial.</p>
+                  </div>
+
+                  <div class="qa-evidence-block">
+                    <h4>Evidencias</h4>
+                    <div class="qa-media-grid">
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/incidents/GLF-002-recuperacion-inicio-web/01-error-null-startup.png" data-lightbox-caption="Error de inicio">
+                          <img src="../assets/qa/gana-la-fecha/incidents/GLF-002-recuperacion-inicio-web/01-error-null-startup.png" alt="Error durante el inicio de Flutter Web" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Error de inicio</figcaption>
+                      </figure>
+
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/incidents/GLF-002-recuperacion-inicio-web/02-app-working-login.png" data-lightbox-caption="Aplicación recuperada">
+                          <img src="../assets/qa/gana-la-fecha/incidents/GLF-002-recuperacion-inicio-web/02-app-working-login.png" alt="Aplicación operativa luego del fix" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Aplicación recuperada</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">GLF-003</span>
+                    <h3>Validación de despliegue Web en Firebase Hosting</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Media</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Resuelto</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="glf-003-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="glf-003-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Descripción breve:</strong> Después de estabilizar el build, era necesario validar que la versión web quedara correctamente publicada y accesible desde Firebase Hosting.</p>
+                    <p><strong>Resolución breve:</strong> Se verificó el workflow exitoso, la generación de artifacts y el estado de Firebase Hosting, confirmando que la aplicación quedara publicada y operativa.</p>
+                  </div>
+
+                  <div class="qa-evidence-block">
+                    <h4>Evidencias</h4>
+                    <div class="qa-media-grid">
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/incidents/GLF-003-validacion-despliegue-web/01-github-actions-success.png" data-lightbox-caption="GitHub Actions exitoso">
+                          <img src="../assets/qa/gana-la-fecha/incidents/GLF-003-validacion-despliegue-web/01-github-actions-success.png" alt="Run exitoso de GitHub Actions" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">GitHub Actions exitoso</figcaption>
+                      </figure>
+
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/incidents/GLF-003-validacion-despliegue-web/02-firebase-hosting-deploy.png" data-lightbox-caption="Firebase Hosting">
+                          <img src="../assets/qa/gana-la-fecha/incidents/GLF-003-validacion-despliegue-web/02-firebase-hosting-deploy.png" alt="Despliegue realizado en Firebase Hosting" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Firebase Hosting</figcaption>
+                      </figure>
+
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/incidents/GLF-003-validacion-despliegue-web/03-app-online.png" data-lightbox-caption="Aplicación publicada">
+                          <img src="../assets/qa/gana-la-fecha/incidents/GLF-003-validacion-despliegue-web/03-app-online.png" alt="Aplicación publicada en web" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Aplicación publicada</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">GLF-004</span>
+                    <h3>Hardening de Firebase Hosting y reglas de seguridad</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Alta</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Pendiente de documentación</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="glf-004-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="glf-004-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Descripción breve:</strong> Se identificaron puntos de mejora vinculados a seguridad, exposición de archivos administrativos y reglas de acceso en Firebase.</p>
+                    <p><strong>Resolución breve:</strong> Este incidente queda reservado para documentar las evidencias específicas de hardening y reducción de superficie expuesta.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section id="mauri-learnings" class="qa-tab-panel" role="tabpanel" hidden>
+            <p class="muted">Este proyecto permitió trabajar sobre problemas reales de mantenimiento, despliegue y validación técnica, integrando debugging, revisión de logs, configuración Firebase y automatización de builds.</p>
+          </section>
+        </div>
+      </section>
+
+      <section id="proctoetic" class="qa-entry qa-entry--proctoetic" hidden>
+        <div class="qa-entry__head">
+          <span class="qa-entry__label">PROYECTO 02</span>
+          <h2>ProctoEtic</h2>
+        </div>
+        <p class="qa-entry__meta muted">Plataforma web de evaluación online con monitoreo antifraude, supervisión docente y revisión de exámenes.</p>
+
+        <div class="qa-entry__grid">
+          <article class="card compact">
+            <h3>Estado</h3>
+            <p class="muted">En proceso de documentación</p>
+          </article>
+          <article class="card compact">
+            <h3>Próxima incorporación</h3>
+            <p class="muted">Esta sección se completará progresivamente con incidentes reales, evidencias técnicas y validaciones realizadas sobre el proyecto.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="instant" class="qa-entry qa-entry--instant" hidden>
+        <div class="qa-entry__head">
+          <span class="qa-entry__label">PROYECTO 03</span>
+          <h2>Instant</h2>
+        </div>
+        <p class="qa-entry__meta muted">App mobile de finanzas personales con registro de movimientos, presupuesto, metas, vencimientos, multimoneda y autenticación.</p>
+
+        <div class="qa-entry__grid">
+          <article class="card compact">
+            <h3>Estado</h3>
+            <p class="muted">En proceso de documentación</p>
+          </article>
+          <article class="card compact">
+            <h3>Próxima incorporación</h3>
+            <p class="muted">Esta sección se completará progresivamente con incidentes reales, evidencias técnicas y validaciones realizadas sobre el proyecto.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="neri" class="qa-entry qa-entry--neri" hidden>
+        <div class="qa-entry__head">
+          <span class="qa-entry__label">PROYECTO 04</span>
+          <h2>Neri</h2>
+        </div>
+        <p class="qa-entry__meta muted">Asistente personal mobile orientado a planificación diaria, ajustes conversacionales, gestión de tareas y debugging de lógica conversacional.</p>
+
+        <div class="qa-entry__grid">
+          <article class="card compact">
+            <h3>Estado</h3>
+            <p class="muted">En proceso de documentación</p>
+          </article>
+          <article class="card compact">
+            <h3>Próxima incorporación</h3>
+            <p class="muted">Esta sección se completará progresivamente con incidentes reales, evidencias técnicas y validaciones realizadas sobre el proyecto.</p>
+          </article>
         </div>
       </section>
     </main>
   </div>
+  <div class="qa-lightbox" hidden aria-hidden="true">
+    <button class="qa-lightbox__backdrop" type="button" aria-label="Cerrar imagen ampliada"></button>
+    <figure class="qa-lightbox__dialog">
+      <button class="qa-lightbox__nav qa-lightbox__nav--prev" type="button" aria-label="Ver imagen anterior">‹</button>
+      <button class="qa-lightbox__nav qa-lightbox__nav--next" type="button" aria-label="Ver imagen siguiente">›</button>
+      <button class="qa-lightbox__close" type="button" aria-label="Cerrar imagen ampliada">Cerrar</button>
+      <img class="qa-lightbox__image" alt="">
+      <figcaption class="qa-lightbox__caption"></figcaption>
+    </figure>
+  </div>
+  <script>
+    (() => {
+      const triggers = document.querySelectorAll('.qa-case-trigger');
+      const cards = document.querySelectorAll('[data-project-card]');
+      const sections = document.querySelectorAll('.qa-entry');
+      let activeId = null;
+
+      function syncButtons(id) {
+        triggers.forEach((trigger) => {
+          const isActive = trigger.dataset.target === id;
+          trigger.textContent = isActive ? trigger.dataset.closeLabel : trigger.dataset.openLabel;
+          trigger.classList.toggle('is-active', isActive);
+          trigger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        });
+      }
+
+      function closeAll() {
+        sections.forEach((section) => {
+          section.hidden = true;
+          section.classList.remove('is-active');
+        });
+
+        cards.forEach((card) => {
+          card.classList.remove('is-active');
+        });
+
+        syncButtons(null);
+        activeId = null;
+      }
+
+      function openProject(id) {
+        closeAll();
+
+        const target = document.getElementById(id);
+        const activeCard = document.querySelector(`[data-project-card="${id}"]`);
+
+        if (!target || !activeCard) return;
+
+        target.hidden = false;
+        target.classList.add('is-active');
+        activeCard.classList.add('is-active');
+        syncButtons(id);
+        activeId = id;
+
+        requestAnimationFrame(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const id = trigger.dataset.target;
+          if (activeId === id) {
+            closeAll();
+            return;
+          }
+          openProject(id);
+        });
+      });
+
+      const mauriTabs = document.querySelectorAll('#mauri .qa-tab');
+      const mauriPanels = document.querySelectorAll('#mauri .qa-tab-panel');
+
+      mauriTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const targetId = tab.dataset.tabTarget;
+
+          mauriTabs.forEach((item) => {
+            const active = item === tab;
+            item.classList.toggle('is-active', active);
+            item.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+
+          mauriPanels.forEach((panel) => {
+            const active = panel.id === targetId;
+            panel.classList.toggle('is-active', active);
+            panel.hidden = !active;
+          });
+        });
+      });
+
+      const incidentToggles = document.querySelectorAll('.qa-incident-toggle');
+      incidentToggles.forEach((toggle) => {
+        toggle.addEventListener('click', () => {
+          const target = document.getElementById(toggle.dataset.incidentTarget);
+          if (!target) return;
+
+          const isOpen = !target.hidden;
+          target.hidden = isOpen;
+          toggle.textContent = isOpen ? 'Ver detalle' : 'Cerrar';
+          toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+          toggle.classList.toggle('is-active', !isOpen);
+        });
+      });
+
+      const lightbox = document.querySelector('.qa-lightbox');
+      const lightboxImage = document.querySelector('.qa-lightbox__image');
+      const lightboxCaption = document.querySelector('.qa-lightbox__caption');
+      const lightboxClose = document.querySelector('.qa-lightbox__close');
+      const lightboxBackdrop = document.querySelector('.qa-lightbox__backdrop');
+      const lightboxPrev = document.querySelector('.qa-lightbox__nav--prev');
+      const lightboxNext = document.querySelector('.qa-lightbox__nav--next');
+      const mediaCards = document.querySelectorAll('.qa-media-card');
+      const mediaButtons = document.querySelectorAll('.qa-media-thumb');
+      let activeMediaButtons = [];
+      let activeMediaIndex = -1;
+
+      mediaCards.forEach((card) => {
+        const image = card.querySelector('img');
+        if (!image) return;
+
+        image.addEventListener('error', () => {
+          card.hidden = true;
+          const parentGrid = card.closest('.qa-media-grid');
+          if (!parentGrid) return;
+          const hasVisibleCards = Array.from(parentGrid.querySelectorAll('.qa-media-card')).some((item) => !item.hidden);
+          if (!hasVisibleCards) {
+            const evidenceBlock = parentGrid.closest('.qa-evidence-block');
+            if (evidenceBlock) {
+              evidenceBlock.hidden = true;
+            }
+          }
+        }, { once: true });
+      });
+
+      function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.hidden = true;
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImage.removeAttribute('src');
+        lightboxImage.alt = '';
+        lightboxCaption.textContent = '';
+        activeMediaButtons = [];
+        activeMediaIndex = -1;
+      }
+
+      function syncLightboxNav() {
+        const hasMultiple = activeMediaButtons.length > 1;
+        if (lightboxPrev) lightboxPrev.hidden = !hasMultiple;
+        if (lightboxNext) lightboxNext.hidden = !hasMultiple;
+      }
+
+      function openLightboxAt(index) {
+        if (!lightbox || !activeMediaButtons.length) return;
+        const normalized = (index + activeMediaButtons.length) % activeMediaButtons.length;
+        activeMediaIndex = normalized;
+        const button = activeMediaButtons[normalized];
+        lightboxImage.src = button.dataset.lightboxImage;
+        lightboxImage.alt = button.dataset.lightboxCaption || '';
+        lightboxCaption.textContent = button.dataset.lightboxCaption || '';
+        lightbox.hidden = false;
+        lightbox.setAttribute('aria-hidden', 'false');
+        syncLightboxNav();
+      }
+
+      mediaButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const parentGrid = button.closest('.qa-media-grid');
+          if (!parentGrid) return;
+          activeMediaButtons = Array.from(parentGrid.querySelectorAll('.qa-media-thumb')).filter((item) => !item.closest('.qa-media-card')?.hidden);
+          const index = activeMediaButtons.indexOf(button);
+          openLightboxAt(index >= 0 ? index : 0);
+        });
+      });
+
+      lightboxClose?.addEventListener('click', closeLightbox);
+      lightboxBackdrop?.addEventListener('click', closeLightbox);
+      lightboxPrev?.addEventListener('click', () => {
+        if (activeMediaIndex >= 0) openLightboxAt(activeMediaIndex - 1);
+      });
+      lightboxNext?.addEventListener('click', () => {
+        if (activeMediaIndex >= 0) openLightboxAt(activeMediaIndex + 1);
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && lightbox && !lightbox.hidden) {
+          closeLightbox();
+        }
+        if (event.key === 'ArrowLeft' && lightbox && !lightbox.hidden && activeMediaIndex >= 0) {
+          openLightboxAt(activeMediaIndex - 1);
+        }
+        if (event.key === 'ArrowRight' && lightbox && !lightbox.hidden && activeMediaIndex >= 0) {
+          openLightboxAt(activeMediaIndex + 1);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
