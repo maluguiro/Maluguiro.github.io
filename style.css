@@ -1017,6 +1017,78 @@ a.btn{ border-bottom: 0; }
   font-weight: 600;
 }
 
+.course-list{
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.course-item{
+  margin-top: 0;
+}
+
+.course-summary{
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.course-summary::-webkit-details-marker{
+  display: none;
+}
+
+.course-summary h3{
+  margin: 0;
+}
+
+.course-meta{
+  margin: 6px 0 0;
+}
+
+.course-body{
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.course-detail-grid{
+  display: grid;
+  gap: 10px;
+}
+
+.course-body p{
+  margin: 0;
+}
+
+.course-body p + p{
+  margin-top: 10px;
+}
+
+.course-certificate{
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.course-certificate__thumb{
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+  background: rgba(255,255,255,0.82);
+}
+
+.course-certificate__thumb img{
+  display: block;
+  width: min(260px, 100%);
+  height: auto;
+}
+
 .project-lead{
   margin: 10px 0 0;
   color: var(--muted);
