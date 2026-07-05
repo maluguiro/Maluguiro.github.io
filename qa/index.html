@@ -66,7 +66,7 @@
             <div class="qa-case-card__overlay"></div>
             <div class="qa-case-card__content">
             <div class="qa-case-card__label">PROYECTO 02</div>
-            <h3>ProctoEtic</h3>
+            <h3>ProctorEtic</h3>
             <p class="muted">Plataforma web · React/Next · Node/Express · PostgreSQL</p>
             <p class="qa-case-status">En documentación</p>
             <button class="btn qa-case-trigger" type="button" data-target="proctoetic" data-open-label="Ver caso" data-close-label="Cerrar caso">Ver caso</button>
@@ -112,17 +112,17 @@
 
           <div class="qa-media-grid qa-media-grid--overview">
             <figure class="qa-media-card">
-              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/overview/01-login-mobile.png" data-lightbox-caption="Login">
+              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/overview/01-login-mobile.png" data-lightbox-caption="Pantalla de login">
                 <img src="../assets/qa/gana-la-fecha/overview/01-login-mobile.png" alt="Login de Gana la Fecha" loading="lazy">
               </button>
-              <figcaption class="qa-media-caption">Login</figcaption>
+              <figcaption class="qa-media-caption">Pantalla de login</figcaption>
             </figure>
 
             <figure class="qa-media-card">
-              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/overview/02-home-mobile.png" data-lightbox-caption="Home">
+              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/gana-la-fecha/overview/02-home-mobile.png" data-lightbox-caption="Pantalla principal">
                 <img src="../assets/qa/gana-la-fecha/overview/02-home-mobile.png" alt="Home de Gana la Fecha" loading="lazy">
               </button>
-              <figcaption class="qa-media-caption">Home</figcaption>
+              <figcaption class="qa-media-caption">Pantalla principal</figcaption>
             </figure>
 
             <figure class="qa-media-card">
@@ -385,19 +385,354 @@
       <section id="proctoetic" class="qa-entry qa-entry--proctoetic" hidden>
         <div class="qa-entry__head">
           <span class="qa-entry__label">PROYECTO 02</span>
-          <h2>ProctoEtic</h2>
+          <h2>ProctorEtic</h2>
         </div>
         <p class="qa-entry__meta muted">Plataforma web de evaluación online con monitoreo antifraude, supervisión docente y revisión de exámenes.</p>
 
-        <div class="qa-entry__grid">
-          <article class="card compact">
-            <h3>Estado</h3>
-            <p class="muted">En proceso de documentación</p>
-          </article>
-          <article class="card compact">
-            <h3>Próxima incorporación</h3>
-            <p class="muted">Esta sección se completará progresivamente con incidentes reales, evidencias técnicas y validaciones realizadas sobre el proyecto.</p>
-          </article>
+        <div class="qa-overview-strip">
+          <div class="qa-overview-strip__head">
+            <h3>Overview</h3>
+            <p class="muted">Capturas base para documentar el acceso y Dashboard docente.</p>
+          </div>
+
+          <div class="qa-media-grid qa-media-grid--overview">
+            <figure class="qa-media-card">
+              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/overview/01-login-docente.png" data-lightbox-caption="Pantalla de login docente">
+                <img src="../assets/qa/proctoetic/overview/01-login-docente.png" alt="Login docente de ProctorEtic" loading="lazy">
+              </button>
+              <figcaption class="qa-media-caption">Pantalla de login docente</figcaption>
+            </figure>
+
+            <figure class="qa-media-card">
+              <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/overview/02-dashboard-docente.png" data-lightbox-caption="Tablero docente">
+                <img src="../assets/qa/proctoetic/overview/02-dashboard-docente.png" alt="Dashboard docente de ProctorEtic" loading="lazy">
+              </button>
+              <figcaption class="qa-media-caption">Tablero docente</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="qa-tabs" role="tablist" aria-label="Secciones ProctorEtic">
+          <button class="qa-tab is-active" type="button" role="tab" aria-selected="true" data-tab-target="proctoetic-overview">Ficha rápida</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="proctoetic-summary">Resumen</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="proctoetic-tech">Tecnologías</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="proctoetic-incidents">Incidentes</button>
+          <button class="qa-tab" type="button" role="tab" aria-selected="false" data-tab-target="proctoetic-learnings">Aprendizajes</button>
+        </div>
+
+        <div class="qa-tab-panels">
+          <section id="proctoetic-overview" class="qa-tab-panel is-active" role="tabpanel">
+            <div class="qa-fact-grid">
+              <div class="qa-fact-row"><span class="qa-fact-key">Tipo</span><span class="qa-fact-value">Plataforma web de evaluación online</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Stack principal</span><span class="qa-fact-value">React/Next · Node/Express · PostgreSQL</span></div>
+              <div class="qa-fact-row"><span class="qa-fact-key">Foco</span><span class="qa-fact-value">Monitoreo antifraude · Supervisión docente · Revisión de exámenes</span></div>
+            </div>
+          </section>
+
+          <section id="proctoetic-summary" class="qa-tab-panel" role="tabpanel" hidden>
+            <p class="muted">Plataforma web de evaluación online con monitoreo antifraude, supervisión docente y revisión de exámenes.</p>
+            <p class="muted">Capturas base para documentar el acceso y el Dashboard docente.</p>
+          </section>
+
+          <section id="proctoetic-tech" class="qa-tab-panel" role="tabpanel" hidden>
+            <div class="qa-tech-groups">
+              <article class="qa-tech-group">
+                <h3>Frontend</h3>
+                <ul class="stack">
+                  <li>React</li>
+                  <li>Next.js</li>
+                </ul>
+              </article>
+
+              <article class="qa-tech-group">
+                <h3>Backend</h3>
+                <ul class="stack">
+                  <li>Node.js</li>
+                  <li>Express</li>
+                </ul>
+              </article>
+
+              <article class="qa-tech-group">
+                <h3>Base de datos</h3>
+                <ul class="stack">
+                  <li>PostgreSQL</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section id="proctoetic-incidents" class="qa-tab-panel" role="tabpanel" hidden>
+            <div class="qa-incident-docs">
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">QA-PROCTO-001</span>
+                    <h3>Seguridad y aislamiento de owner entre docentes</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Alta</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Resuelto</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="qa-procto-001-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="qa-procto-001-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Resumen:</strong> Se corrigió un problema de aislamiento entre docentes en el listado y creación de exámenes. El flujo pasó a requerir autenticación y a filtrar los exámenes por owner y membresías.</p>
+                    <p><strong>Qué ocurrió:</strong> El listado de exámenes no garantizaba correctamente que cada docente visualizara solo los exámenes asociados a su usuario. En una plataforma multiusuario, esto podía afectar la separación de datos entre propietarios.</p>
+                    <p><strong>Cómo se resolvió / validó:</strong> Se incorporó autenticación obligatoria en endpoints sensibles, filtrado por ownerId y membresías, creación de ExamMember con rol OWNER y un endpoint de recuperación para exámenes legacy. La validación se documenta mediante commit histórico, diff del fix y código actual.</p>
+                    <p><strong>Competencias demostradas:</strong> Seguridad backend · Control de acceso · Multi-tenant isolation · Debugging de API · Modelado de ownership · Remediación de datos legacy</p>
+                  </div>
+
+                  <div class="qa-evidence-block">
+                    <h4>Evidencias</h4>
+                    <div class="qa-media-grid">
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-001-seguridad-owner-isolation/01-commit-isolate-exams.png.png" data-lightbox-caption="Commit histórico del fix de aislamiento">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-001-seguridad-owner-isolation/01-commit-isolate-exams.png.png" alt="Commit histórico donde se introduce el fix de aislamiento de exámenes por usuario" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Commit histórico donde se introduce el fix de aislamiento de exámenes por usuario.</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-001-seguridad-owner-isolation/02-diff-api-exams-auth-scope.png.png" data-lightbox-caption="Diff del alcance autenticado del endpoint">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-001-seguridad-owner-isolation/02-diff-api-exams-auth-scope.png.png" alt="Diff donde el endpoint de listado de exámenes pasa a requerir autenticación y filtro por owner y memberships" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Diff donde el endpoint de listado de exámenes pasa a requerir autenticación y filtro por owner/memberships.</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-001-seguridad-owner-isolation/03-claim-legacy-endpoint.png.png" data-lightbox-caption="Endpoint de remediación legacy">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-001-seguridad-owner-isolation/03-claim-legacy-endpoint.png.png" alt="Endpoint de remediación para reclamar exámenes legacy asociados a owner local" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Endpoint de remediación para reclamar exámenes legacy asociados a owner local.</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">QA-PROCTO-002</span>
+                    <h3>Migración y reparación de PostgreSQL</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Alta</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Resuelto</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="qa-procto-002-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="qa-procto-002-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Resumen:</strong> Se corrigieron consultas raw incompatibles con PostgreSQL y se agregó reparación defensiva para tablas lite con columnas inconsistentes.</p>
+                    <p><strong>Qué ocurrió:</strong> Durante la migración a PostgreSQL, distintas rutas del examen dependían de consultas SQL raw con placeholders y nombres de columnas no compatibles con el motor actual. Esto afectaba funcionalidades como chat, paper, preguntas y revisión.</p>
+                    <p><strong>Cómo se resolvió / validó:</strong> Se ajustaron placeholders a sintaxis PostgreSQL, se normalizaron nombres de columnas camelCase con comillas, se agregaron rutinas de reparación de esquema lite y logging específico para errores SQL. La validación se documenta mediante commit histórico, diff del fix y código actual.</p>
+                    <p><strong>Competencias demostradas:</strong> PostgreSQL · Debugging de SQL raw · Migración de base de datos · Reparación defensiva de esquema · Observabilidad técnica · Integración API/base de datos</p>
+                  </div>
+
+                  <div class="qa-evidence-block">
+                    <h4>Evidencias</h4>
+                    <div class="qa-media-grid">
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-002-migracion-postgres/01-commit-postgres-fix.png.png" data-lightbox-caption="Commit histórico del fix PostgreSQL">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-002-migracion-postgres/01-commit-postgres-fix.png.png" alt="Commit histórico donde se corrigen raw queries y se restaura chat, paper y questions" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Commit histórico donde se corrigen raw queries y se restaura chat, paper, questions.</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-002-migracion-postgres/02-diff-placeholder-fix.png.png" data-lightbox-caption="Diff de compatibilidad PostgreSQL">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-002-migracion-postgres/02-diff-placeholder-fix.png.png" alt="Diff donde se corrigen placeholders y columnas para compatibilidad con PostgreSQL" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Diff donde se corrigen placeholders y columnas para compatibilidad con PostgreSQL.</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-002-migracion-postgres/03-lite-schema-repair.png.png" data-lightbox-caption="Rutinas de reparación lite">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-002-migracion-postgres/03-lite-schema-repair.png.png" alt="Código actual con rutinas de reparación de esquema lite" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Código actual con rutinas de reparación de esquema lite.</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">QA-PROCTO-003</span>
+                    <h3>Revisión de examen con error 404</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Alta</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Resuelto</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="qa-procto-003-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="qa-procto-003-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Resumen:</strong> Caso reservado para documentar fallas en el acceso a revisión de exámenes, respuesta 404 y validación posterior del flujo corregido.</p>
+                    <p><strong>Qué ocurrió:</strong> Se incorporará el recorrido exacto del usuario, el punto de falla y las respuestas observadas en frontend y red.</p>
+                    <p><strong>Cómo se resolvió / validó:</strong> Esta sección se completará con el ajuste aplicado y la verificación de la revisión y visualización esperada.</p>
+                    <p><strong>Competencias demostradas:</strong> Debugging frontend, validación de red y análisis de flujo de examen.</p>
+                  </div>
+
+                  <div class="qa-evidence-block">
+                    <h4>Evidencias</h4>
+                    <div class="qa-media-grid">
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/01-review-button.png" data-lightbox-caption="Botón Ver revisión">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/01-review-button.png" alt="Botón de revisión de examen" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Botón Ver revisión</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/02-review-error.png" data-lightbox-caption="Error al validar la revisión">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/02-review-error.png" alt="Error al revisar examen" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Error al validar la revisión</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/03-network-404.png" data-lightbox-caption="Error 404 en Network">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/03-network-404.png" alt="Respuesta 404 en red" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Error 404 en Network</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/04-review-fixed.png" data-lightbox-caption="Revisión funcionando">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/04-review-fixed.png" alt="Revisión corregida" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Revisión funcionando</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/05-review-pdf.png" data-lightbox-caption="Vista tipo PDF">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-003-revision-examen-404/05-review-pdf.png" alt="Visualización PDF en revisión" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Vista tipo PDF</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">QA-PROCTO-004</span>
+                    <h3>Corrección manual y feedback</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Media</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Resuelto</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="qa-procto-004-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="qa-procto-004-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Resumen:</strong> Incidente reservado para documentar corrección manual, feedback docente y generación de evidencia final del proceso de revisión.</p>
+                    <p><strong>Qué ocurrió:</strong> Se completará con el comportamiento observado en la bandeja de corrección y el flujo exacto de revisión afectado.</p>
+                    <p><strong>Cómo se resolvió / validó:</strong> Se incorporará la solución aplicada junto con la validación del panel de corrección y el resultado final generado.</p>
+                    <p><strong>Competencias demostradas:</strong> Revisión funcional, trazabilidad de corrección y validación de salidas imprimibles.</p>
+                  </div>
+
+                  <div class="qa-evidence-block">
+                    <h4>Evidencias</h4>
+                    <div class="qa-media-grid">
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-004-correccion-manual-feedback/01-grading-panel.png" data-lightbox-caption="Panel de corrección manual">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-004-correccion-manual-feedback/01-grading-panel.png" alt="Panel de corrección manual" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Panel de corrección manual</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-004-correccion-manual-feedback/02-review-with-feedback.png" data-lightbox-caption="Revisión con feedback">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-004-correccion-manual-feedback/02-review-with-feedback.png" alt="Revisión con feedback" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Revisión con feedback</figcaption>
+                      </figure>
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-004-correccion-manual-feedback/03-review-print-summary.png" data-lightbox-caption="Resumen imprimible de revisión">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-004-correccion-manual-feedback/03-review-print-summary.png" alt="Resumen imprimible del examen corregido" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Resumen imprimible de revisión</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="qa-incident-doc">
+                <div class="qa-incident-doc__head">
+                  <div class="qa-incident-doc__meta">
+                    <span class="qa-incident-doc__id">QA-PROCTO-005</span>
+                    <h3>Validación del sistema antifraude</h3>
+                  </div>
+                  <div class="qa-incident-doc__badges">
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Severidad</span>
+                      <span class="qa-incident-pill">Alta</span>
+                    </span>
+                    <span class="qa-incident-pill-group">
+                      <span class="qa-incident-pill-label">Estado</span>
+                      <span class="qa-incident-pill qa-incident-pill--status">Resuelto</span>
+                    </span>
+                    <button class="qa-incident-toggle" type="button" data-incident-target="qa-procto-005-detail" aria-expanded="false">Ver detalle</button>
+                  </div>
+                </div>
+
+                <div id="qa-procto-005-detail" class="qa-incident-doc__detail" hidden>
+                  <div class="qa-incident-copy">
+                    <p><strong>Resumen:</strong> Validación del comportamiento antifraude frente a una acción no permitida durante el examen.</p>
+                    <p><strong>Qué ocurrió:</strong> El sistema detecta una acción no permitida durante el examen y muestra una advertencia al alumno indicando que se descontó una vida.</p>
+                    <p><strong>Cómo se resolvió / validó:</strong> Se verificó visualmente la advertencia mostrada al alumno y la respuesta esperada del flujo de examen.</p>
+                    <p><strong>Competencias demostradas:</strong> Validación funcional, monitoreo de reglas antifraude y revisión de comportamiento crítico para examen online.</p>
+                  </div>
+
+                  <div class="qa-evidence-block">
+                    <h4>Evidencias</h4>
+                    <div class="qa-media-grid">
+                      <figure class="qa-media-card">
+                        <button class="qa-media-thumb" type="button" data-lightbox-image="../assets/qa/proctoetic/incidents/QA-PROCTO-005-antifraude/01-antifraude-warning.png" data-lightbox-caption="Advertencia del sistema antifraude">
+                          <img src="../assets/qa/proctoetic/incidents/QA-PROCTO-005-antifraude/01-antifraude-warning.png" alt="Advertencia del sistema antifraude durante el examen" loading="lazy">
+                        </button>
+                        <figcaption class="qa-media-caption">Advertencia del sistema antifraude</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section id="proctoetic-learnings" class="qa-tab-panel" role="tabpanel" hidden>
+            <p class="muted">Los incidentes cargados en ProctorEtic documentan validaciones sobre seguridad, migración de base de datos, revisión de examen, feedback docente y monitoreo antifraude.</p>
+          </section>
         </div>
       </section>
 
@@ -510,23 +845,28 @@
         });
       });
 
-      const mauriTabs = document.querySelectorAll('#mauri .qa-tab');
-      const mauriPanels = document.querySelectorAll('#mauri .qa-tab-panel');
+      const tabGroups = document.querySelectorAll('.qa-entry .qa-tabs');
+      tabGroups.forEach((group) => {
+        const projectEntry = group.closest('.qa-entry');
+        if (!projectEntry) return;
+        const tabs = group.querySelectorAll('.qa-tab');
+        const panels = projectEntry.querySelectorAll('.qa-tab-panel');
 
-      mauriTabs.forEach((tab) => {
-        tab.addEventListener('click', () => {
-          const targetId = tab.dataset.tabTarget;
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const targetId = tab.dataset.tabTarget;
 
-          mauriTabs.forEach((item) => {
-            const active = item === tab;
-            item.classList.toggle('is-active', active);
-            item.setAttribute('aria-selected', active ? 'true' : 'false');
-          });
+            tabs.forEach((item) => {
+              const active = item === tab;
+              item.classList.toggle('is-active', active);
+              item.setAttribute('aria-selected', active ? 'true' : 'false');
+            });
 
-          mauriPanels.forEach((panel) => {
-            const active = panel.id === targetId;
-            panel.classList.toggle('is-active', active);
-            panel.hidden = !active;
+            panels.forEach((panel) => {
+              const active = panel.id === targetId;
+              panel.classList.toggle('is-active', active);
+              panel.hidden = !active;
+            });
           });
         });
       });
@@ -570,6 +910,10 @@
             const evidenceBlock = parentGrid.closest('.qa-evidence-block');
             if (evidenceBlock) {
               evidenceBlock.hidden = true;
+            }
+            const overviewStrip = parentGrid.closest('.qa-overview-strip');
+            if (overviewStrip) {
+              overviewStrip.hidden = true;
             }
           }
         }, { once: true });
