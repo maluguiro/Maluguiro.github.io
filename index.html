@@ -91,11 +91,11 @@
           </ul>
 
           <div class="links">
-            <button class="btn" type="button" data-open-gallery>Ver flujo</button>
+            <button class="btn" type="button" data-open-gallery="proctoetic">Ver flujo</button>
             
           </div>
                     <div class="folder-gallery">
-            <a class="folder-hit" data-open-gallery href="#pe-1" aria-label="Abrir galería ProctoEtic">
+            <a class="folder-hit" data-open-gallery="proctoetic" href="#pe-1" aria-label="Abrir galería ProctoEtic">
               <img class="folder-back" src="assets/ui/proctoetic-folder_back.png" alt="" aria-hidden="true">
               <div class="folder-mouth">
                 <img class="paper paper-1" src="assets/proctoetic/02-dashboard.png" alt="">
@@ -325,22 +325,112 @@
       </section>
 
       <section>
-        <h2>Cursos</h2>
+        <h2>Formación técnica</h2>
 
-        <article class="card compact">
-          <h3>Git & GitHub</h3>
-          <p class="muted">Flujo de versionado, ramas, Pull Requests y trabajo colaborativo.</p>
-        </article>
+        <div class="course-list">
+          <details class="card compact course-item">
+            <summary class="course-summary">
+              <div>
+                <h3>Professional Testing Master — Nivel Avanzado</h3>
+                <p class="course-meta muted">UTN FRBA</p>
+              </div>
+              <span class="project-status">En curso</span>
+            </summary>
+            <div class="course-body">
+              <div class="course-detail-grid">
+                <p class="muted"><strong>Lo aprendido:</strong> Formación avanzada en testing de software, diseño de casos de prueba, documentación QA y herramientas aplicadas a procesos de calidad. En paralelo, aplico estos contenidos en mi QA Lab sobre proyectos reales.</p>
+                <p class="muted"><strong>Tecnologías:</strong> Testing · QA · APIs · SQL · Documentación</p>
+                <p class="muted"><strong>Proyecto relacionado:</strong> QA Lab</p>
+                <p class="muted"><strong>Certificado:</strong> Disponible al finalizar</p>
+              </div>
+            </div>
+          </details>
 
-        <article class="card compact">
-          <h3>IA aplicada al desarrollo </h3>
-          <p class="muted">Optimización del workflow: planificación, asistencia guiada, debugging, documentación y diseño de prompts.</p>
-        </article>
+          <details class="card compact course-item">
+            <summary class="course-summary">
+              <div>
+                <h3>Automatización QA</h3>
+                <p class="course-meta muted">Talento Tech</p>
+              </div>
+              <span class="project-status">En curso</span>
+            </summary>
+            <div class="course-body">
+              <div class="course-detail-grid">
+                <p class="muted"><strong>Lo aprendido:</strong> Formación orientada a automatización de pruebas y validación de calidad sobre aplicaciones web. Complementa mi práctica actual documentando casos reales, evidencias, bugs y procesos de debugging.</p>
+                <p class="muted"><strong>Tecnologías:</strong> Testing · SQL · Postman · Playwright</p>
+                <p class="muted"><strong>Proyecto relacionado:</strong> QA Lab</p>
+                <p class="muted"><strong>Certificado:</strong> Disponible al finalizar</p>
+              </div>
+            </div>
+          </details>
 
-         <article class="card compact">
-          <h3>Desarrollo Front-End JS - Talento Tech (en curso) </h3>
-          <p class="muted">Aprendiendo a construir aplicaciones web más interactivas dominando HTML, CSS y JavaScript</p>
-        </article>
+          <details class="card compact course-item">
+            <summary class="course-summary">
+              <div>
+                <h3>Git & GitHub</h3>
+                <p class="course-meta muted">Talento Tech</p>
+              </div>
+              <span class="pill">Finalizado</span>
+            </summary>
+            <div class="course-body">
+              <div class="course-detail-grid">
+                <p class="muted"><strong>Lo aprendido:</strong> Control de versiones con Git y GitHub: commits, ramas, repositorios remotos y flujo de trabajo para organizar cambios, documentar avances y mantener trazabilidad en proyectos de software.</p>
+                <p class="muted"><strong>Tecnologías:</strong> Git · GitHub · Branches · Pull Requests · Git Flow</p>
+              </div>
+              <div class="course-certificate">
+                <a class="course-certificate__thumb" href="./assets/certificates/Diploma Git & GitHub.jpg" data-open-gallery="certificates" data-gallery-index="0">
+                  <img src="./assets/certificates/Diploma Git & GitHub.jpg" alt="Certificado de Git & GitHub" loading="lazy">
+                </a>
+                <p class="muted"><a class="btn" href="./assets/certificates/Diploma Git & GitHub.jpg" data-open-gallery="certificates" data-gallery-index="0">Abrir certificado</a></p>
+              </div>
+            </div>
+          </details>
+
+          <details class="card compact course-item">
+            <summary class="course-summary">
+              <div>
+                <h3>Front-End JS</h3>
+                <p class="course-meta muted">Talento Tech / Gobierno de la Ciudad de Buenos Aires</p>
+              </div>
+              <span class="pill">Finalizado</span>
+            </summary>
+            <div class="course-body">
+              <div class="course-detail-grid">
+                <p class="muted"><strong>Lo aprendido:</strong> Desarrollo de interfaces con HTML, CSS y JavaScript. Como proyecto final desarrollé CeramicLab, un e-commerce responsive con catálogo dinámico, navegación entre secciones, carrito de compras y manipulación del DOM.</p>
+                <p class="muted"><strong>Tecnologías:</strong> HTML · CSS · JavaScript · DOM · Responsive</p>
+                <p class="muted"><strong>Proyecto relacionado:</strong> <a href="https://maluguiro.github.io/CeramicLab/" target="_blank" rel="noreferrer">Ver proyecto CeramicLab</a></p>
+              </div>
+              <div class="course-certificate">
+                <a class="course-certificate__thumb" href="./assets/certificates/Front-End JS - Certificacion.jpg" data-open-gallery="certificates" data-gallery-index="1">
+                  <img src="./assets/certificates/Front-End JS - Certificacion.jpg" alt="Certificado de Front-End JS" loading="lazy">
+                </a>
+                <p class="muted"><a class="btn" href="./assets/certificates/Front-End JS - Certificacion.jpg" data-open-gallery="certificates" data-gallery-index="1">Abrir certificado</a></p>
+              </div>
+            </div>
+          </details>
+
+          <details class="card compact course-item">
+            <summary class="course-summary">
+              <div>
+                <h3>Desarrollo con IA</h3>
+                <p class="course-meta muted">BIG School</p>
+              </div>
+              <span class="pill">Finalizado</span>
+            </summary>
+            <div class="course-body">
+              <div class="course-detail-grid">
+                <p class="muted"><strong>Lo aprendido:</strong> Uso de inteligencia artificial en procesos de desarrollo de software: prompting, agentes, asistencia para código, documentación, análisis de errores y automatización de tareas dentro del flujo de trabajo.</p>
+                <p class="muted"><strong>Tecnologías:</strong> ChatGPT · Gemini · Claude · Prompt Engineering · Agentes IA</p>
+              </div>
+              <div class="course-certificate">
+                <a class="course-certificate__thumb" href="./assets/certificates/Desarrollo con IA.jpg" data-open-gallery="certificates" data-gallery-index="2">
+                  <img src="./assets/certificates/Desarrollo con IA.jpg" alt="Certificado de Desarrollo con IA" loading="lazy">
+                </a>
+                <p class="muted"><a class="btn" href="./assets/certificates/Desarrollo con IA.jpg" data-open-gallery="certificates" data-gallery-index="2">Abrir certificado</a></p>
+              </div>
+            </div>
+          </details>
+        </div>
       </section>
 
       <section id="contacto">
@@ -382,18 +472,25 @@
 
   <script>
     (function () {
-      var items = [
-        { src: "assets/proctoetic/01-login.png", caption: "Login" },
-        { src: "assets/proctoetic/02-dashboard.png", caption: "Dashboard" },
-        { src: "assets/proctoetic/03-universidades.png", caption: "Universidades" },
-        { src: "assets/proctoetic/04-configuracion-docente.png", caption: "Configuracion docente" },
-        { src: "assets/proctoetic/05-configuracion-basica.png", caption: "Configuracion basica" },
-        { src: "assets/proctoetic/06-preguntas.png", caption: "Preguntas" },
-        { src: "assets/proctoetic/07-tablero-control.png", caption: "Tablero de control" },
-        { src: "assets/proctoetic/08-tablero-chat.png", caption: "Tablero + chat" },
-         { src: "assets/proctoetic/10-correcciones-bandeja.png", caption: "Bandeja de correcciones" },
-        { src: "assets/proctoetic/09-correccion-detalle.png", caption: "Correccion (detalle)" }
-       ];
+      var galleries = {
+        proctoetic: [
+          { src: "assets/proctoetic/01-login.png", caption: "Login" },
+          { src: "assets/proctoetic/02-dashboard.png", caption: "Dashboard" },
+          { src: "assets/proctoetic/03-universidades.png", caption: "Universidades" },
+          { src: "assets/proctoetic/04-configuracion-docente.png", caption: "Configuracion docente" },
+          { src: "assets/proctoetic/05-configuracion-basica.png", caption: "Configuracion basica" },
+          { src: "assets/proctoetic/06-preguntas.png", caption: "Preguntas" },
+          { src: "assets/proctoetic/07-tablero-control.png", caption: "Tablero de control" },
+          { src: "assets/proctoetic/08-tablero-chat.png", caption: "Tablero + chat" },
+          { src: "assets/proctoetic/10-correcciones-bandeja.png", caption: "Bandeja de correcciones" },
+          { src: "assets/proctoetic/09-correccion-detalle.png", caption: "Correccion (detalle)" }
+        ],
+        certificates: [
+          { src: "assets/certificates/Diploma Git & GitHub.jpg", caption: "Certificado de Git & GitHub" },
+          { src: "assets/certificates/Front-End JS - Certificacion.jpg", caption: "Certificado de Front-End JS" },
+          { src: "assets/certificates/Desarrollo con IA.jpg", caption: "Certificado de Desarrollo con IA" }
+        ]
+      };
 
       var modal = document.querySelector("[data-pe-modal]");
       if (!modal) return;
@@ -408,16 +505,20 @@
       var closeBtn = modal.querySelector(".pe-modal__close");
 
       var currentIndex = 0;
+      var currentGallery = galleries.proctoetic;
 
       function render() {
-        var item = items[currentIndex];
+        var item = currentGallery[currentIndex];
         modalImg.src = item.src;
         modalImg.alt = item.caption;
         modalCaption.textContent = item.caption;
-        modalCount.textContent = (currentIndex + 1) + "/" + items.length;
+        modalCount.textContent = (currentIndex + 1) + "/" + currentGallery.length;
+        if (prevBtn) prevBtn.hidden = currentGallery.length < 2;
+        if (nextBtn) nextBtn.hidden = currentGallery.length < 2;
       }
 
-      function openModal(index) {
+      function openModal(galleryName, index) {
+        currentGallery = galleries[galleryName] || galleries.proctoetic;
         currentIndex = index;
         render();
         modal.setAttribute("aria-hidden", "false");
@@ -431,17 +532,22 @@
       }
 
       function next() {
-        currentIndex = (currentIndex + 1) % items.length;
+        currentIndex = (currentIndex + 1) % currentGallery.length;
         render();
       }
 
       function prev() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
         render();
       }
 
       openButtons.forEach(function (btn) {
-        btn.addEventListener("click", function () { openModal(0); });
+        btn.addEventListener("click", function (event) {
+          event.preventDefault();
+          var galleryName = btn.getAttribute("data-open-gallery") || "proctoetic";
+          var index = parseInt(btn.getAttribute("data-gallery-index") || "0", 10);
+          openModal(galleryName, isNaN(index) ? 0 : index);
+        });
       });
 
       if (nextBtn) nextBtn.addEventListener("click", next);
