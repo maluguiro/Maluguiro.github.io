@@ -966,6 +966,21 @@ a.btn{ border-bottom: 0; }
   border-color: rgba(82,48,63,0.44);
   box-shadow: 0 8px 18px rgba(86,56,70,0.14);
 }
+.brand-links .btn--qa-lab{
+  background: #a64e73;
+  border-color: #a64e73;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(126,67,91,0.28);
+}
+.brand-links .btn--qa-lab:hover{
+  background: #873b5a;
+  border-color: #873b5a;
+  box-shadow: 0 10px 22px rgba(126,67,91,0.34);
+}
+.brand-links .btn--qa-lab:focus-visible{
+  outline: 3px solid rgba(255,255,255,0.9);
+  outline-offset: 3px;
+}
 
 .links{
   display: flex;
