@@ -72,88 +72,178 @@
       <section id="proyectos">
         <h2>Proyectos</h2>
 
-        <article class="card">
-          <h3>ProctoEtic — Plataforma de evaluación con monitoreo antifraude</h3>
-          <p class="muted">
-            Plataforma de evaluación online que permite crear, rendir y supervisar exámenes en tiempo real, con registro de eventos antifraude y herramientas de corrección docente.
-          </p>
+        <details class="card project-accordion" open>
+          <summary class="project-accordion__summary">
+            <div class="project-accordion__copy">
+              <h3>CENTENO</h3>
+              <p>App mobile para recetas y fórmulas de panadería</p>
+            </div>
+            <div class="project-accordion__meta">
+              <span class="project-status">Producto finalizado · PWA disponible · Próximamente en Play Store</span>
+              <span class="project-accordion__chevron" aria-hidden="true"></span>
+            </div>
+          </summary>
 
-          <ul class="features">
-            <li>Creación y configuración de evaluaciones (docente/alumno)</li>
-            <li>Banco de preguntas y armado de exámenes</li>
-            <li>Supervisión en vivo con tablero de control y chat</li>
-            <li>Registro de eventos antifraude por intento</li>
-            <li>Corrección manual y generación de reportes</li>
-          </ul>
+          <div class="project-accordion__body">
+            <p class="muted">
+              Aplicación desarrollada con React Native y Expo, pensada para acompañar el trabajo diario de panadería con cálculos automáticos, preparación por etapas y gestión de recetas. El proyecto abarcó el desarrollo completo del producto, desde la interfaz y la lógica funcional hasta su versión PWA.
+            </p>
 
-          <ul class="stack">
-            <li>React/Next</li><li>Node/Express</li><li>Prisma</li><li>SQL</li><li>Deploy (Render/Vercel)</li>
-          </ul>
+            <ul class="stack">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>TypeScript</li>
+              <li>PWA</li>
+            </ul>
 
-          <div class="links">
-            <button class="btn" type="button" data-open-gallery="proctoetic">Ver flujo</button>
-            
+            <div class="links">
+              <a class="btn" href="https://centenobread.netlify.app/" target="_blank" rel="noopener noreferrer">Probar PWA</a>
+            </div>
+
+            <div class="centeno-strip">
+              <a href="#centeno-1" aria-label="Ampliar vista general de Centeno">
+                <img src="assets/centeno/01-centeno-overview.jpg" alt="Vista general de Centeno" loading="lazy">
+              </a>
+              <a href="#centeno-2" aria-label="Ampliar funcionalidades de Centeno">
+                <img src="assets/centeno/02-centeno-funcionalidades.jpg" alt="Funcionalidades de Centeno" loading="lazy">
+              </a>
+            </div>
           </div>
-                    <div class="folder-gallery">
-            <a class="folder-hit" data-open-gallery="proctoetic" href="#pe-1" aria-label="Abrir galería ProctoEtic">
-              <img class="folder-back" src="assets/ui/proctoetic-folder_back.png" alt="" aria-hidden="true">
-              <div class="folder-mouth">
-                <img class="paper paper-1" src="assets/proctoetic/02-dashboard.png" alt="">
-                <img class="paper paper-2" src="assets/proctoetic/04-configuracion-docente.png" alt="">
-                <img class="paper paper-3" src="assets/proctoetic/10-correcciones-bandeja.png" alt="">
-              </div>
-              <img class="folder-front" src="assets/ui/proctoetic-folder_front.png" alt="">
-              <div class="folder-label">
-                <div class="folder-title">ProctoEtic</div>
-                <div class="folder-sub">Click para abrir</div>
-              </div>
-            </a>
-          </div>        </article>
-        <article class="card project-card project-card--secondary">
-          <div class="project-card__header">
-            <h3>Instant — App mobile de finanzas personales</h3>
-            <span class="project-status">En desarrollo — MVP en etapa final</span>
+        </details>
+
+        <details class="card project-accordion">
+          <summary class="project-accordion__summary">
+            <div class="project-accordion__copy">
+              <h3>ProctoEtic</h3>
+              <p>Plataforma de evaluación con monitoreo antifraude</p>
+            </div>
+            <span class="project-accordion__chevron" aria-hidden="true"></span>
+          </summary>
+
+          <div class="project-accordion__body">
+            <p class="muted">
+              Plataforma de evaluación online que permite crear, rendir y supervisar exámenes en tiempo real, con registro de eventos antifraude y herramientas de corrección docente.
+            </p>
+
+            <ul class="features">
+              <li>Creación y configuración de evaluaciones (docente/alumno)</li>
+              <li>Banco de preguntas y armado de exámenes</li>
+              <li>Supervisión en vivo con tablero de control y chat</li>
+              <li>Registro de eventos antifraude por intento</li>
+              <li>Corrección manual y generación de reportes</li>
+            </ul>
+
+            <ul class="stack">
+              <li>React/Next</li><li>Node/Express</li><li>Prisma</li><li>SQL</li><li>Deploy (Render/Vercel)</li>
+            </ul>
+
+            <div class="links">
+              <button class="btn" type="button" data-open-gallery="proctoetic">Ver flujo</button>
+            </div>
+
+            <div class="folder-gallery">
+              <a class="folder-hit" data-open-gallery="proctoetic" href="#pe-1" aria-label="Abrir galería ProctoEtic">
+                <img class="folder-back" src="assets/ui/proctoetic-folder_back.png" alt="" aria-hidden="true">
+                <div class="folder-mouth">
+                  <img class="paper paper-1" src="assets/proctoetic/02-dashboard.png" alt="">
+                  <img class="paper paper-2" src="assets/proctoetic/04-configuracion-docente.png" alt="">
+                  <img class="paper paper-3" src="assets/proctoetic/10-correcciones-bandeja.png" alt="">
+                </div>
+                <img class="folder-front" src="assets/ui/proctoetic-folder_front.png" alt="">
+                <div class="folder-label">
+                  <div class="folder-title">ProctoEtic</div>
+                  <div class="folder-sub">Click para abrir</div>
+                </div>
+              </a>
+            </div>
           </div>
+        </details>
 
-          <p class="muted">
-            App mobile para registrar movimientos, organizar presupuesto y visualizar la información financiera de forma clara, simple y usable en el día a día.
-          </p>
+        <details class="card project-accordion">
+          <summary class="project-accordion__summary">
+            <div class="project-accordion__copy">
+              <h3>Instant</h3>
+              <p>App mobile de finanzas personales</p>
+            </div>
+            <div class="project-accordion__meta">
+              <span class="project-status">En desarrollo — MVP en etapa final</span>
+              <span class="project-accordion__chevron" aria-hidden="true"></span>
+            </div>
+          </summary>
 
-          <ul class="features">
-            <li>Registro rápido de ingresos y egresos</li>
-            <li>Presupuesto mensual y semanal configurable</li>
-            <li>Metas de ahorro y remanente semanal</li>
-            <li>Calendario de vencimientos, cuotas y pagos recurrentes</li>
-            <li>Soporte multimoneda y autenticación con biometría</li>
-          </ul>
+          <div class="project-accordion__body">
+            <p class="muted">
+              App mobile para registrar movimientos, organizar presupuesto y visualizar la información financiera de forma clara, simple y usable en el día a día.
+            </p>
 
-          <p class="project-role">
-            <strong>Rol:</strong> diseño funcional, UX/UI, frontend mobile e integración progresiva con backend.
-          </p>
+            <ul class="features">
+              <li>Registro rápido de ingresos y egresos</li>
+              <li>Presupuesto mensual y semanal configurable</li>
+              <li>Metas de ahorro y remanente semanal</li>
+              <li>Calendario de vencimientos, cuotas y pagos recurrentes</li>
+              <li>Soporte multimoneda y autenticación con biometría</li>
+            </ul>
 
-          <ul class="stack">
-            <li>React Native / Expo</li>
-            <li>Expo Router</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Prisma</li>
-            <li>PostgreSQL</li>
-            <li>JWT</li>
-            <li>bcrypt</li>
-          </ul>
+            <p class="project-role">
+              <strong>Rol:</strong> diseño funcional, UX/UI, frontend mobile e integración progresiva con backend.
+            </p>
 
-          <div class="links">
-            <a class="btn" href="#instant-1">Ver pantallas</a>
+            <ul class="stack">
+              <li>React Native / Expo</li>
+              <li>Expo Router</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Prisma</li>
+              <li>PostgreSQL</li>
+              <li>JWT</li>
+              <li>bcrypt</li>
+            </ul>
+
+            <div class="links">
+              <a class="btn" href="#instant-1">Ver pantallas</a>
+            </div>
+
+            <div class="instant-strip">
+              <a href="#instant-1"><img src="assets/instant/01-home.png" alt="Instant Home" loading="lazy"></a>
+              <a href="#instant-2"><img src="assets/instant/02-agregar-movimiento.png" alt="Agregar movimiento" loading="lazy"></a>
+              <a href="#instant-5"><img src="assets/instant/05-presupuesto-semanal.png" alt="Presupuesto semanal" loading="lazy"></a>
+              <a href="#instant-7"><img src="assets/instant/07-calendario.png" alt="Calendario" loading="lazy"></a>
+            </div>
           </div>
-
-          <div class="instant-strip">
-            <a href="#instant-1"><img src="assets/instant/01-home.png" alt="Instant Home" loading="lazy"></a>
-            <a href="#instant-2"><img src="assets/instant/02-agregar-movimiento.png" alt="Agregar movimiento" loading="lazy"></a>
-            <a href="#instant-5"><img src="assets/instant/05-presupuesto-semanal.png" alt="Presupuesto semanal" loading="lazy"></a>
-            <a href="#instant-7"><img src="assets/instant/07-calendario.png" alt="Calendario" loading="lazy"></a>
-          </div>
-        </article>
+        </details>
       </section>
+
+      <div id="centeno-1" class="pe-modal" aria-hidden="true">
+        <a class="pe-modal__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+        <div class="pe-modal__panel" role="dialog" aria-modal="true" aria-label="Vista general de Centeno">
+          <a class="pe-modal__close" href="#proyectos" aria-label="Cerrar">&times;</a>
+          <a class="pe-modal__nav pe-modal__nav--prev" href="#centeno-2" aria-label="Anterior">&lsaquo;</a>
+          <figure class="pe-modal__figure">
+            <img src="assets/centeno/01-centeno-overview.jpg" alt="Vista general de Centeno">
+            <figcaption>
+              <span>Vista general de Centeno</span>
+              <span>1/2</span>
+            </figcaption>
+          </figure>
+          <a class="pe-modal__nav pe-modal__nav--next" href="#centeno-2" aria-label="Siguiente">&rsaquo;</a>
+        </div>
+      </div>
+
+      <div id="centeno-2" class="pe-modal" aria-hidden="true">
+        <a class="pe-modal__backdrop" href="#proyectos" aria-label="Cerrar"></a>
+        <div class="pe-modal__panel" role="dialog" aria-modal="true" aria-label="Funcionalidades de Centeno">
+          <a class="pe-modal__close" href="#proyectos" aria-label="Cerrar">&times;</a>
+          <a class="pe-modal__nav pe-modal__nav--prev" href="#centeno-1" aria-label="Anterior">&lsaquo;</a>
+          <figure class="pe-modal__figure">
+            <img src="assets/centeno/02-centeno-funcionalidades.jpg" alt="Funcionalidades de Centeno">
+            <figcaption>
+              <span>Funcionalidades de Centeno</span>
+              <span>2/2</span>
+            </figcaption>
+          </figure>
+          <a class="pe-modal__nav pe-modal__nav--next" href="#centeno-1" aria-label="Siguiente">&rsaquo;</a>
+        </div>
+      </div>
 
       <div id="instant-1" class="pe-modal instant-lightbox" aria-hidden="true">
         <a class="pe-modal__backdrop" href="#proyectos" aria-label="Cerrar"></a>
