@@ -645,6 +645,16 @@ body{
   color: var(--ink);
 }
 
+.qa-entry--mauri .qa-incident-copy code{
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  color: var(--qa-accent-text);
+  background: rgba(var(--qa-accent-rgb),0.08);
+  border-radius: 4px;
+  padding: 1px 3px;
+}
+
 .qa-evidence-block{
   margin-top: 12px;
 }
@@ -663,6 +673,11 @@ body{
 
 .qa-media-grid--overview{
   margin-top: 0;
+}
+
+.qa-media-grid--overview-single{
+  grid-template-columns: minmax(0, 420px);
+  justify-content: center;
 }
 
 .qa-media-card{
