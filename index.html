@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malena Guirotane — Portfolio</title>
+  <title>Malena Guirotane | Full Stack Developer · Front-End & QA</title>
+  <meta name="description" content="Portfolio de desarrollo Full Stack con foco en Front-End y conocimientos de QA. Proyectos web y mobile, React, Next.js, Node.js y QA Lab." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- HEADER GINGHAM -->
+  <!-- PORTADA: DESARROLLO FULL STACK + ESPECIALIZACIÓN QA -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
+        <p class="hero-eyebrow">PORTFOLIO DE DESARROLLO DE SOFTWARE</p>
         <h1 class="brand-title">Malena Guirotane</h1>
-        <p class="brand-subtitle">QA Engineer · Software Developer · Calidad de productos digitales</p>
-
-        <div class="brand-links">
-          <a class="btn" href="https://www.linkedin.com/in/malena-guirotane" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="assets/CV/CV-QA-Malena_Guirotane_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn">
-            Ver CV
-          </a>
+        <p class="brand-subtitle">Full Stack Developer <span class="hero-subtitle-secondary">· Front-End Focus · QA &amp; Testing</span></p>
+        <p class="hero-pitch">Desarrollo aplicaciones web y mobile, con especial interés en las interfaces, la experiencia de usuario y la calidad del software.</p>
+        <nav class="brand-links" aria-label="Navegación del portfolio">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
           <a class="btn btn--qa-lab" href="/qa/">QA Lab</a>
-          <a class="btn" href="mailto:mguiro21@gmail.com?subject=Contacto%20desde%20tu%20portfolio&body=Hola%20Malena%2C%0D%0AVi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte.%0D%0A%0D%0AGracias!">Email</a>
-          <a class="btn" href="#proyectos">Proyectos</a>
-        </div>
+          <a class="btn" href="https://github.com/maluguiro" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/malena-guirotane" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="#contacto">Contacto</a>
+        </nav>
+        <p class="hero-route-note">¿Buscás un perfil QA? <a href="/qa/">Conocé mis casos de testing y debugging en QA Lab</a>.</p>
       </div>
     </div>
   </header>
@@ -35,83 +36,41 @@
       <section class="about">
         <h2>Sobre mí</h2>
         <div class="about-copy">
-          <p class="muted">
-            Soy estudiante de Desarrollo de Software, lo que me aporta una base técnica para enfocarme en QA y testing de aplicaciones web y mobile. Trabajo sobre proyectos propios y freelance aplicando pruebas funcionales, debugging, documentación de bugs, desarrollo fullstack, IA asistida y mejora continua de flujos. Actualmente profundizo mi formación en automatización de pruebas y testing avanzado.</p>
+          <p class="muted">Soy estudiante de Desarrollo de Software y desarrollo productos web y mobile en proyectos propios, freelance y colaborativos. Mi foco está en el Front-End, con React, Next.js y JavaScript/TypeScript, y complemento ese trabajo con integración de APIs, lógica de backend y bases de datos.</p>
+          <p class="muted">También me especializo en QA y testing: diseño pruebas, investigo incidentes y valido correcciones. Esta combinación me permite abordar una funcionalidad desde su implementación hasta su verificación, con atención a la experiencia de usuario y al comportamiento real del producto.</p>
         </div>
       </section>
 
       <section class="highlights">
-        <h2>Highlights</h2>
-
+        <h2>Qué hago</h2>
         <div class="grid-3">
+          <article class="mini-card">
+            <h3>Front-End</h3>
+            <p class="muted">Interfaces responsive, flujos de usuario y componentes con React, Next.js y JavaScript/TypeScript.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Back-End &amp; APIs</h3>
+            <p class="muted">Integración de servicios, endpoints, validaciones, lógica de negocio y persistencia de datos.</p>
+          </article>
           <article class="mini-card mini-card--qa">
             <div class="mini-card__top">
-              <h3>QA & Debugging</h3>
-              <a class="mini-card__open" href="/qa">QA Lab →</a>
+              <h3>QA &amp; Testing</h3>
+              <a class="mini-card__open" href="/qa/">Ver QA Lab →</a>
             </div>
-            <p class="muted">Testing funcional, análisis de bugs y validación de flujos web/mobile.</p>
+            <p class="muted">Testing funcional y de regresión, análisis de defectos, APIs, debugging y validación post-fix.</p>
           </article>
-
           <article class="mini-card">
-            <h3>Frontend</h3>
-            <p class="muted">Interfaces responsive, componentes reutilizables y buenas prácticas de estructura.</p>
-          </article>
-
-          <article class="mini-card">
-            <h3>Backend / APIs</h3>
-            <p class="muted">Endpoints, validaciones, lógica de negocio e integración con bases de datos.</p>
-          </article>
-
-          <article class="mini-card">
-            <h3>Git - GitHub & CI/CD</h3>
-            <p class="muted">Branches, Pull Requests, GitHub Actions y despliegues automatizados.</p>
+            <h3>Trabajo colaborativo</h3>
+            <p class="muted">Git/GitHub, ramas, Pull Requests, revisión de cambios, CI/CD y documentación técnica.</p>
           </article>
         </div>
       </section>
 
       <section id="proyectos">
-        <h2>Proyectos</h2>
+        <h2>Proyectos destacados</h2>
+        <p class="muted section-lead">Aplicaciones y experiencias de desarrollo que muestran mi trabajo en interfaces, lógica de negocio, integración de servicios y calidad de software.</p>
 
         <details class="card project-accordion" open>
-          <summary class="project-accordion__summary">
-            <div class="project-accordion__copy">
-              <h3>CENTENO</h3>
-              <p>App mobile para recetas y fórmulas de panadería</p>
-            </div>
-            <div class="project-accordion__meta">
-              <span class="project-status">Producto finalizado · PWA disponible · Próximamente en Play Store</span>
-              <span class="project-accordion__chevron" aria-hidden="true"></span>
-            </div>
-          </summary>
-
-          <div class="project-accordion__body">
-            <p class="muted">
-              Aplicación desarrollada con React Native y Expo, pensada para acompañar el trabajo diario de panadería con cálculos automáticos, preparación por etapas y gestión de recetas. El proyecto abarcó el desarrollo completo del producto, desde la interfaz y la lógica funcional hasta su versión PWA.
-            </p>
-
-            <ul class="stack">
-              <li>React Native</li>
-              <li>Expo</li>
-              <li>TypeScript</li>
-              <li>PWA</li>
-            </ul>
-
-            <div class="links">
-              <a class="btn btn--primary" href="https://centenobread.netlify.app/" target="_blank" rel="noopener noreferrer">Probar PWA</a>
-            </div>
-
-            <div class="centeno-strip">
-              <a href="#centeno-1" aria-label="Ampliar vista general de Centeno">
-                <img src="assets/centeno/01-centeno-overview.jpg" alt="Vista general de Centeno" loading="lazy">
-              </a>
-              <a href="#centeno-2" aria-label="Ampliar funcionalidades de Centeno">
-                <img src="assets/centeno/02-centeno-funcionalidades.jpg" alt="Funcionalidades de Centeno" loading="lazy">
-              </a>
-            </div>
-          </div>
-        </details>
-
-        <details class="card project-accordion">
           <summary class="project-accordion__summary">
             <div class="project-accordion__copy">
               <h3>ProctoEtic</h3>
@@ -124,6 +83,8 @@
             <p class="muted">
               Plataforma de evaluación online que permite crear, rendir y supervisar exámenes en tiempo real, con registro de eventos antifraude y herramientas de corrección docente.
             </p>
+
+            <p class="project-role"><strong>Rol:</strong> desarrollo Full Stack de pantallas y flujos docente/alumno, integración de APIs y debugging de acceso, persistencia y resultados.</p>
 
             <ul class="features">
               <li>Creación y configuración de evaluaciones (docente/alumno)</li>
@@ -155,6 +116,27 @@
                   <div class="folder-sub">Click para abrir</div>
                 </div>
               </a>
+            </div>
+          </div>
+        </details>
+
+        <details class="card project-accordion">
+          <summary class="project-accordion__summary">
+            <div class="project-accordion__copy">
+              <h3>CeramicLab</h3>
+              <p>E-commerce responsive · Proyecto Front-End</p>
+            </div>
+            <div class="project-accordion__meta">
+              <span class="project-status">Demo web disponible</span>
+              <span class="project-accordion__chevron" aria-hidden="true"></span>
+            </div>
+          </summary>
+          <div class="project-accordion__body">
+            <p class="muted">Proyecto de Front-End desarrollado durante la formación en JavaScript: catálogo dinámico, navegación entre secciones, carrito de compras e interacciones con el DOM.</p>
+            <p class="project-role"><strong>Foco:</strong> maquetación responsive, lógica de interfaz e interacción con el usuario.</p>
+            <ul class="stack"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>DOM</li><li>Responsive Design</li></ul>
+            <div class="links">
+              <a class="btn btn--primary" href="https://maluguiro.github.io/CeramicLab/" target="_blank" rel="noopener noreferrer">Probar demo</a>
             </div>
           </div>
         </details>
@@ -211,7 +193,78 @@
             </div>
           </div>
         </details>
+
+        <details class="card project-accordion">
+          <summary class="project-accordion__summary">
+            <div class="project-accordion__copy">
+              <h3>CENTENO</h3>
+              <p>App mobile para recetas y fórmulas de panadería</p>
+            </div>
+            <div class="project-accordion__meta">
+              <span class="project-status">Producto finalizado · PWA disponible · Próximamente en Play Store</span>
+              <span class="project-accordion__chevron" aria-hidden="true"></span>
+            </div>
+          </summary>
+
+          <div class="project-accordion__body">
+            <p class="muted">
+              Aplicación desarrollada con React Native y Expo, pensada para acompañar el trabajo diario de panadería con cálculos automáticos, preparación por etapas y gestión de recetas. El proyecto abarcó el desarrollo completo del producto, desde la interfaz y la lógica funcional hasta su versión PWA.
+            </p>
+
+            <ul class="stack">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>TypeScript</li>
+              <li>PWA</li>
+            </ul>
+
+            <div class="links">
+              <a class="btn btn--primary" href="https://centenobread.netlify.app/" target="_blank" rel="noopener noreferrer">Probar PWA</a>
+            </div>
+
+            <div class="centeno-strip">
+              <a href="#centeno-1" aria-label="Ampliar vista general de Centeno">
+                <img src="assets/centeno/01-centeno-overview.jpg" alt="Vista general de Centeno" loading="lazy">
+              </a>
+              <a href="#centeno-2" aria-label="Ampliar funcionalidades de Centeno">
+                <img src="assets/centeno/02-centeno-funcionalidades.jpg" alt="Funcionalidades de Centeno" loading="lazy">
+              </a>
+            </div>
+          </div>
+        </details>
       </section>
+      
+      <section id="experiencia" class="experience-section">
+        <h2>Experiencia colaborativa</h2>
+        <p class="muted section-lead">Además de mis proyectos propios, colaboro en productos de equipos de desarrollo, combinando implementación técnica, investigación de incidentes y QA.</p>
+        <div class="collaboration-grid">
+          <article class="card compact collaboration-card">
+            <p class="collaboration-kicker">EQUIPO / PRODUCTO DIGITAL</p>
+            <h3>Innova Lab</h3>
+            <p class="muted">Colaboración en desarrollo y QA de aplicaciones, con participación en revisión de funcionalidades, análisis de errores y validación de cambios.</p>
+            <ul class="stack"><li>Desarrollo</li><li>QA</li><li>Trabajo en equipo</li></ul>
+          </article>
+          <article class="card compact collaboration-card">
+            <p class="collaboration-kicker">APLICACIÓN DE NAVEGACIÓN</p>
+            <h3>NavRide</h3>
+            <p class="muted">Trabajo sobre una aplicación existente: mantenimiento técnico, debugging de flujos de navegación y pruebas de regresión para validar correcciones.</p>
+            <ul class="stack"><li>Flutter</li><li>Debugging</li><li>QA / Regresión</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="quality-section" aria-labelledby="quality-title">
+        <div class="quality-panel">
+          <div>
+            <p class="collaboration-kicker">MI ESPECIALIZACIÓN EN CALIDAD</p>
+            <h2 id="quality-title">QA Lab</h2>
+            <p class="muted">Casos reales documentados de testing, APIs, debugging, análisis de causa raíz y validación posterior a las correcciones. Evidencias de cómo abordo la calidad durante el desarrollo.</p>
+          </div>
+          <a class="btn btn--primary" href="/qa/">Explorar QA Lab</a>
+        </div>
+      </section>
+
+
 
       <div id="centeno-1" class="pe-modal" aria-hidden="true">
         <a class="pe-modal__backdrop" href="#proyectos" aria-label="Cerrar"></a>
@@ -378,12 +431,12 @@
 
         <div class="skills-grid">
           <article class="card compact skill-card">
-            <h3>Frontend</h3>
+            <h3>Front-End</h3>
             <p class="muted">HTML · CSS · JavaScript · React · Next.js · Responsive Design</p>
           </article>
 
           <article class="card compact skill-card">
-            <h3>Backend & APIs</h3>
+            <h3>Back-End &amp; APIs</h3>
             <p class="muted">Node.js · Express · TypeScript · Prisma · REST APIs · Validaciones</p>
           </article>
 
