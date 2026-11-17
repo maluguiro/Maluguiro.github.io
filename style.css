@@ -1921,3 +1921,11 @@ a.btn{ border-bottom: 0; }
   padding: 10px 16px;
   height: auto;
 }
+
+
+/* Roles visibles en el resumen de proyectos colaborativos */
+.project-roles{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;margin-top:10px}
+.project-roles__label{font-size:.78rem;font-weight:650;color:var(--muted)}
+.project-role-tag{display:inline-flex;align-items:center;padding:3px 9px;border-radius:6px;background:var(--accent-soft);border:1px solid var(--accent-soft-border);color:var(--pink-soft-2);font-size:.75rem;font-weight:650;line-height:1.5}
+.project-accordion__body h4{font-size:.95rem;margin:18px 0 6px;color:var(--ink)}
+.project-accordion__body h4:first-child{margin-top:4px}
